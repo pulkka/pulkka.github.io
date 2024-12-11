@@ -1,0 +1,3 @@
+html {
+    background-color: color-mix(in hsl shorter hue, rgb(255, 0, 0) percentage, blue percentage);
+}
