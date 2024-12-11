@@ -2,3 +2,6 @@ body {
     background: linear-gradient(180deg, #8af8ef 0%, #ff9ab8 100%)no-repeat center center fixed ;
     background-size:cover ;
 }
+#text {
+    font-family: 'Courier New', Courier, monospace;
+}
