@@ -1,11 +1,13 @@
 var borgors = document.getElementById("borgors")
 var asia1 = document.getElementById("asia1")
 var asia2 = document.getElementById("asia2")
+var asia3 = document.getElementById("asia3")
 var laskuri = 0
 var click = 1
 var asia1hin = 10
 var brsec = 0
 var asia2hin = 100
+var asia3hin = 2000
 var munch = new Audio('MUNCH.mp3')
 setInterval(function(){
     laskuri = laskuri + brsec
@@ -40,13 +42,21 @@ function buyshop(lol){
             
         }
     }
+    if (lol == 3){
+        if (laskuri >= asia3hin){
+            brsec = brsec+10
+            laskuri=laskuri-asia3hin
+            asia3hin = (Math.round(asia3hin * 1.3))
+            asia3.innerHTML=""+asia3hin   
+            borgors.innerHTML=""+laskuri
+            
+            
+        }
+    }
     
 }
 function addclick(lol){
     click=click+lol
 }
 
-function addbrgrsec(lol){
-    brsec = brsec + lol
-    
-}
+
