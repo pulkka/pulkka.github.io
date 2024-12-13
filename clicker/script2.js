@@ -1,4 +1,6 @@
 var borgors = document.getElementById("borgors")
+var laskuri = 0
 function addborgor(){
-    borgors=borgors+1
+    laskuri=laskuri+1
+    borgors.innerHTML=""+laskuri
 }
