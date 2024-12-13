@@ -36,7 +36,7 @@ function buyshop(lol){
             brsec = brsec+1
             laskuri=laskuri-asia2hin
             asia2hin = (Math.round(asia2hin * 1.3))
-            asia2.innerHTML=""+asia2hin   
+            asia2.innerHTML="Price - "+asia2hin + " Clicks Every 4 Seconds"
             borgors.innerHTML=""+laskuri
             
             

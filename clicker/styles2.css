@@ -21,7 +21,7 @@ html{
     text-align: center;
 }
 table {
-  
+    border-radius: 5px;
     border:2px solid black;
     width: 500px;
     height: 500px;
@@ -34,11 +34,17 @@ table {
     overflow-y: scroll;
   }
   td{
+    border-radius: 5px;
     border-bottom:2px solid rgb(0, 0, 0);
     
     
   }
   #shop {
+    border-radius: 5px;
     position: absolute;
     top: 10px;
   }
+#brgr {
+    cursor: pointer;
+}
+
