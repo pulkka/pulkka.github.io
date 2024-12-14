@@ -30,9 +30,9 @@ var asia7hin = 50000000
 var asia8hin = 100000000
 var munch = new Audio('MUNCH.mp3')
 setInterval(function(){
-    laskuri = laskuri + brsec/40
+    laskuri = laskuri + brsec/400
     borgors.innerHTML=(Math.round(laskuri))
-},100)
+},10)
 setInterval(function(){
     level.innerHTML=levelcount
     borgors.innerHTML=(Math.round(laskuri))
@@ -129,7 +129,7 @@ function buyshop(lol){
     }
     if (lol == 5){
         if (laskuri >= asia5hin){
-            brsec = brsec+500
+            brsec = brsec+700
             laskuri=laskuri-asia5hin
             asia5hin = (Math.round(asia5hin * 1.3))
             asia5.innerHTML=""+asia5hin   
@@ -151,7 +151,7 @@ function buyshop(lol){
     }
     if (lol == 7){
         if (laskuri >= asia7hin){
-            brsec = brsec+5000
+            brsec = brsec+10000
             laskuri=laskuri-asia7hin
             asia7hin = (Math.round(asia7hin * 1.3))
             asia7.innerHTML=""+asia7hin   
@@ -162,7 +162,7 @@ function buyshop(lol){
     }
     if (lol == 8){
         if (laskuri >= asia8hin){
-            brsec = brsec+7000
+            brsec = brsec+100000
             laskuri=laskuri-asia8hin
             asia8hin = (Math.round(asia8hin * 1.3))
             asia8.innerHTML=""+asia8hin   
