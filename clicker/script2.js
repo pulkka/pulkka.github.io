@@ -2,31 +2,36 @@ var borgors = document.getElementById("borgors")
 var asia1 = document.getElementById("asia1")
 var asia2 = document.getElementById("asia2")
 var asia3 = document.getElementById("asia3")
+var asia4 = document.getElementById("asia4")
+var level = document.getElementById("level").value;
+var level = 50
 var laskuri = 0
 var click = 1
 var asia1hin = 10
 var brsec = 0
 var asia2hin = 100
 var asia3hin = 2000
+var asia4hin = 10000
 var munch = new Audio('MUNCH.mp3')
 setInterval(function(){
-    laskuri = laskuri + brsec
-    borgors.innerHTML=""+laskuri
-},4000)
+    laskuri = laskuri + brsec/40
+    borgors.innerHTML=(Math.round(laskuri))
+},100)
 setInterval(function(){
-    borgors.innerHTML=""+laskuri
+    level.innerHTML=level
+    borgors.innerHTML=(Math.round(laskuri))
 },100)
 function addborgor(){
     laskuri=laskuri+click
-    borgors.innerHTML=""+laskuri
+    borgors.innerHTML=(Math.round(laskuri))
     munch.play()
 }
 function buyshop(lol){
     if(lol==1){
         if (laskuri >= asia1hin){
             laskuri=laskuri-asia1hin
-            asia1hin = (Math.round(asia1hin * 3.1))
-            borgors.innerHTML=""+laskuri
+            asia1hin = (Math.round(asia1hin * 10.1))
+            borgors.innerHTML=(Math.round(laskuri))
             asia1.innerHTML=""+asia1hin
         }
         
@@ -36,8 +41,8 @@ function buyshop(lol){
             brsec = brsec+1
             laskuri=laskuri-asia2hin
             asia2hin = (Math.round(asia2hin * 1.3))
-            asia2.innerHTML="Price - "+asia2hin + " Clicks Every 4 Seconds"
-            borgors.innerHTML=""+laskuri
+            asia2.innerHTML=""+asia2hin
+            borgors.innerHTML=(Math.round(laskuri))
             
             
         }
@@ -48,7 +53,18 @@ function buyshop(lol){
             laskuri=laskuri-asia3hin
             asia3hin = (Math.round(asia3hin * 1.3))
             asia3.innerHTML=""+asia3hin   
-            borgors.innerHTML=""+laskuri
+            borgors.innerHTML=(Math.round(laskuri))
+            
+            
+        }
+    }
+    if (lol == 4){
+        if (laskuri >= asia3hin){
+            brsec = brsec+30
+            laskuri=laskuri-asia3hin
+            asia4hin = (Math.round(asia4hin * 1.3))
+            asia4.innerHTML=""+asia4hin   
+            borgors.innerHTML=(Math.round(laskuri))
             
             
         }

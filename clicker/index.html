@@ -16,7 +16,7 @@
 <body>
     <div id="shop">
         <table>
-            <tr onclick="buyshop(1);addclick(1)">
+            <tr id="border"onclick="buyshop(1);addclick(1)">
                 <td>
                     <img src = "cursor.png" alt="eror" style="height: 100px; width: 100px;">
                     <span id="price"><i>Price - <i id ="asia1">10</i> You Get More Burgers From Clicking<i></span>
@@ -28,9 +28,9 @@
 
                 </td>
             </tr>
-            <tr onclick="buyshop(2)">
+            <tr id="border" onclick="buyshop(2)">
                 <td>
-                    <img src="https://api.deepai.org/job-view-file/c2e88b49-8cc4-4d23-b623-8b830e95901b/outputs/output.jpg?art-image=true" alt="eror" style="height: 100px; width: 100px;">
+                    <img src="https://static.vecteezy.com/system/resources/previews/020/004/761/non_2x/cartoon-happy-chef-man-giving-a-thumb-up-free-vector.jpg" alt="eror" style="height: 100px; width: 100px;">
                     <span id="price">Price - <i id ="asia2">100</i> Clicks Every 4 Seconds</span>
                     
 
@@ -38,9 +38,9 @@
 
                 </td>
             </tr>
-            <tr onclick="buyshop(3)">
+            <tr id="border" onclick="buyshop(3)">
                 <td>
-                    <img src="https://api.deepai.org/job-view-file/22ce5e65-80a9-4b66-8419-e92708a915f1/outputs/output.jpg?art-image=true" alt="eror" style="height: 100px; width: 100px;">
+                    <img src="https://img.freepik.com/premium-vector/burger-shop-fast-food-restaurant-building-with-burger-clouds-tree-illustration-white-isolated_138676-672.jpg?w=1060" alt="eror" style="height: 100px; width: 100px;">
                     
                     <span id="price">Price - <i id ="asia3">2000</i> Gives You 10 More Burgers Every 4 Seconds</span>
 
@@ -48,10 +48,10 @@
 
                 </td>
             </tr>
-            <tr>
+            <tr onclick="buyshop(4)">
                 <td>
-                    <img src="cursor.png" alt="eror" style="height: 100px; width: 100px;">
-                    <i>le shop</i>
+                    <img src="https://easydrawingguides.com/wp-content/uploads/2021/03/how-to-draw-a-factory-featured-image-1200-1.png" alt="eror" style="height: 100px; width: 100px;">
+                    <span id="price">Price - <i id ="asia4">10000</i> Gives You 30 More Burgers Every 4 Seconds</span>
                     
 
 
@@ -64,6 +64,9 @@
         <i id="borgors">0</i>
         <img id="brgr"onclick="addborgor()"src="burger.png"style="width:200px;height:200px;">
     </div>
+    <label for="level">level:</label>
+    <meter id="level" min="0" max="100" low="33" high="66" optimum="80" value="20">at 50/100</meter>
+
 <script src="script2.js"></script>
 
 
