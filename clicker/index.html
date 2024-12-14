@@ -16,7 +16,7 @@
 <body>
     <div id="shop">
         <table>
-            <tr id="border"onclick="buyshop(1);addclick(1)">
+            <tr id="tuote1"id="border"onclick="buyshop(1);addclick(1)">
                 <td>
                     <img src = "cursor.png" alt="eror" style="height: 100px; width: 100px;">
                     <span id="price"><i>Price - <i id ="asia1">10</i> You Get More Burgers From Clicking<i></span>
@@ -28,7 +28,7 @@
 
                 </td>
             </tr>
-            <tr id="border" onclick="buyshop(2)">
+            <tr id="tuote2" id="border" onclick="buyshop(2)">
                 <td>
                     <img src="https://static.vecteezy.com/system/resources/previews/020/004/761/non_2x/cartoon-happy-chef-man-giving-a-thumb-up-free-vector.jpg" alt="eror" style="height: 100px; width: 100px;">
                     <span id="price">Price - <i id ="asia2">100</i> Clicks Every 4 Seconds</span>
@@ -38,7 +38,7 @@
 
                 </td>
             </tr>
-            <tr id="border" onclick="buyshop(3)">
+            <tr id="tuote3" id="border" onclick="buyshop(3)">
                 <td>
                     <img src="https://img.freepik.com/premium-vector/burger-shop-fast-food-restaurant-building-with-burger-clouds-tree-illustration-white-isolated_138676-672.jpg?w=1060" alt="eror" style="height: 100px; width: 100px;">
                     
@@ -48,21 +48,32 @@
 
                 </td>
             </tr>
-            <tr onclick="buyshop(4)">
+            <tr id="tuote4" id="border" onclick="buyshop(4)">
                 <td>
-                    <img src="https://easydrawingguides.com/wp-content/uploads/2021/03/how-to-draw-a-factory-featured-image-1200-1.png" alt="eror" style="height: 100px; width: 100px;">
-                    <span id="price">Price - <i id ="asia4">10000</i> Gives You 30 More Burgers Every 4 Seconds</span>
+                    <img src="coal-mine-297488_1280" alt="eror" style="height: 100px; width: 100px;">
+                    <span id="price">Price - <i id ="asia4">10000</i> Gives You 100 More Burgers Every 4 Seconds</span>
                     
 
 
 
                 </td>
             </tr>
+            <tr id="tuote5" onclick="buyshop(5)">
+                <td>
+                    <img src="https://easydrawingguides.com/wp-content/uploads/2021/03/how-to-draw-a-factory-featured-image-1200-1.png" alt="eror" style="height: 100px; width: 100px;">
+                    <span id="price">Price - <i id ="asia5">150000</i> Gives You 500 More Burgers Every 4 Secs</span>
+                    
+
+
+
+                </td>
+            </tr>
+            
         </table>
     </div>
     <div id="clickme">
         <i id="borgors">0</i>
-        <img id="brgr"onclick="addborgor()"src="burger.png"style="width:200px;height:200px;">
+        <img draggable="false" id="brgr"onclick="addborgor()"src="burger.png"style="width:200px;height:200px;">
     </div>
     <label for="level">level:</label>
     <meter id="level" min="0" max="100" low="33" high="66" optimum="80" value="20">at 50/100</meter>

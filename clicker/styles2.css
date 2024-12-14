@@ -48,4 +48,12 @@ table {
 #brgr {
     cursor: pointer;
 }
-
+td:hover{
+  background-color: #bdbcbc !important;
+}
+td:active{
+  background-color: #837272 !important;
+}
+td{
+  border-radius: 0px;
+}
