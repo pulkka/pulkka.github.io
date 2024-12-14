@@ -3,7 +3,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <html>
     <meta meta name="viewport" content= 
             "width=device-width, user-scalable=no" />
@@ -16,12 +17,19 @@
 
 </head>
 <body>
-    <div id="shop">
+    <div id="shop" style="height: 100%; overflow-y: scroll;">
         <table>
             <tr id="tuote1"id="border"onclick="buyshop(1);addclick(1)">
                 <td>
-                    <img src = "cursor.png" alt="eror" style="height: 100px; width: 100px;">
-                    <span id="price"><i>Price - <i id ="asia1">10</i> You Get More Burgers From Clicking<i></span>
+                    <div class="shop-img">
+                        <img src = "cursor.png" alt="eror">
+                    </div>
+                    <div class="shop-price">
+                        <i id ="asia1">10</i>🍔
+                        <p>
+                        You Get More Burgers From Clicking
+                        </p>
+                    </div>
                     
                     
                     
@@ -33,7 +41,7 @@
             <tr id="tuote2" id="border" onclick="buyshop(2)">
                 <td>
                     <img src="cartoon-1299636_1280.png" alt="eror" style="height: 100px; width: 100px;">
-                    <span id="price">Price - <i id ="asia2">100</i> Clicks Every 4 Seconds</span>
+                    <span id="price"> <i id ="asia2">100</i>🍔 Clicks Every 4 Seconds</span>
                     
 
 
@@ -44,7 +52,7 @@
                 <td>
                     <img src="restaurant-6281067_1280.png" alt="eror" style="height: 100px; width: 100px;">
                     
-                    <span id="price">Price - <i id ="asia3">2000</i> Gives You 10 More Burgers Every 4 Seconds</span>
+                    <span id="price"><i id ="asia3">2000</i>🍔 Gives You 10 More Burgers Every 4 Seconds</span>
 
 
 
@@ -53,7 +61,7 @@
             <tr id="tuote4" id="border" onclick="buyshop(4)">
                 <td>
                     <img src="coal-mine-297488_1280.png" alt="eror" style="height: 100px; width: 100px;">
-                    <span id="price">Price - <i id ="asia4">10000</i> Gives You 100 More Burgers Every 4 Seconds</span>
+                    <span id="price"> <i id ="asia4">10000</i>🍔 Gives You 100 More Burgers Every 4 Seconds</span>
                     
 
 
@@ -63,7 +71,7 @@
             <tr id="tuote5" onclick="buyshop(5)">
                 <td>
                     <img src="factory-6283505_1280.png" alt="eror" style="height: 100px; width: 100px;">
-                    <span id="price">Price - <i id ="asia5">150000</i> Gives You 700 More Burgers Every 4 Secs</span>
+                    <span id="price"> <i id ="asia5">150000</i>🍔 Gives You 700 More Burgers Every 4 Secs</span>
                     
 
 
@@ -73,7 +81,7 @@
             <tr id="tuote6" onclick="buyshop(6)">
                 <td>
                     <img src="chemistry-306977_1280.png" alt="eror" style="height: 100px; width: 100px;">
-                    <span id="price">Price - <i id ="asia5">3000000</i> Gives You 2000 More Brgrs Every 4 Secs</span>
+                    <span id="price"> <i id ="asia5">3000000</i>🍔 Gives You 2K More Brgrs Every 4 Secs</span>
                     
 
 
@@ -83,7 +91,7 @@
             <tr id="tuote7" onclick="buyshop(7)">
                 <td>
                     <img src="rocket-4857953_1280.png" alt="eror" style="height: 100px; width: 100px;">
-                    <span id="price">Price - <i id ="asia5">50000000</i> Gives You 10000 More Brgrs Every 4 Secs</span>
+                    <span id="price"><i id ="asia5">50000000</i>🍔 Gives You 10K More Brgrs Every 4 Secs</span>
                     
 
 
@@ -92,8 +100,28 @@
             </tr>
             <tr id="tuote8" onclick="buyshop(9)">
                 <td>
-                    <img src="factory-6283505_1280.png" alt="eror" style="height: 100px; width: 100px;">
-                    <span id="price">Price - <i id ="asia8">1000000000</i> Gives U 100000 More Brgrs Every 4 Secs</span>
+                    <img src="portal.png" alt="eror" style="height: 100px; width: 100px;">
+                    <span id="price"> <i id ="asia8">1000000000</i>🍔 Gives U 100K More Brgrs Every 4 Secs</span>
+                    
+
+
+
+                </td>
+            </tr>
+            <tr id="tuote8" onclick="buyshop(9)">
+                <td>
+                    <img src="portal.png" alt="eror" style="height: 100px; width: 100px;">
+                    <span id="price"> <i id ="asia8">1000000000</i>🍔 Gives U 100K More Brgrs Every 4 Secs</span>
+                    
+
+
+
+                </td>
+            </tr>
+            <tr id="tuote8" onclick="buyshop(9)">
+                <td>
+                    <img src="portal.png" alt="eror" style="height: 100px; width: 100px;">
+                    <span id="price"> <i id ="asia8">1000000000</i>🍔 Gives U 100K More Brgrs Every 4 Secs</span>
                     
 
 
@@ -107,9 +135,11 @@
         <i id="borgors">0</i>
         <img draggable="false" id="brgr"onclick="addborgor()"src="burger.png"style="width:200px;height:200px;">
     </div>
-    <label for="level">level:</label>
-    <meter id="level" min="0" max="100" low="33" high="66" optimum="80" value="20">at 50/100</meter>
-
+    <div id="color">
+        <p>background color</p>
+        <input id="vari" type="color" value="#b507a8">
+        <button  type="button" class="btn btn-primary" onclick="vaihdavari()">Submit</button>
+    </div>
 <script src="script2.js"></script>
 
 

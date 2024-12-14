@@ -3,7 +3,7 @@
     margin-left: 45%;
 }
 html{
-    background-color: blueviolet;
+    
     user-select: none;
     -webkit-user-drag: none;
     -webkit-user-drag: none;
@@ -44,7 +44,7 @@ table {
     border: none;
     border-radius: 30px;
     position: absolute;
-    top: 10px;
+    top: 0px;
   }
 #brgr {
     cursor: pointer;
@@ -57,4 +57,23 @@ td:active{
 }
 td{
   border-radius: 0px;
+}
+#color {
+  margin-left: 95%;
+}
+body{
+  background-color: rgb(170, 43, 132) !important;
+}
+.shop-img {
+  width: 50px;
+  float: left;
+}
+.shop-img img {
+  height: 100px;
+  width: 100px;
+}
+.shop-price {
+  float: left;
+  padding-left: 50px;
+  padding-top: 10px;
 }

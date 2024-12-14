@@ -15,7 +15,6 @@ var asia5 = document.getElementById("asia5")
 var asia6 = document.getElementById("asia6")
 var asia7 = document.getElementById("asia7")
 var asia8 = document.getElementById("asia8")
-var level = document.getElementById("level").value;
 var levelcount = 50
 var laskuri = 0
 var click = 1
@@ -34,48 +33,47 @@ setInterval(function(){
     borgors.innerHTML=(Math.round(laskuri))
 },10)
 setInterval(function(){
-    level.innerHTML=levelcount
     borgors.innerHTML=(Math.round(laskuri))
     
     if (laskuri<asia1hin){
-        tuote1.style.backgroundColor="#838181"
+        tuote1.style.backgroundColor="#c5b9a5"
       }else{
-        tuote1.style.backgroundColor="white"
+        tuote1.style.backgroundColor="#ffd283"
       }
       if (laskuri<asia2hin){
-        tuote2.style.backgroundColor="#838181"
+        tuote2.style.backgroundColor="#c5b9a5"
       }else{
-        tuote2.style.backgroundColor="white"
+        tuote2.style.backgroundColor="#ffd283"
       }
       if (laskuri<asia3hin){
-        tuote3.style.backgroundColor="#838181"
+        tuote3.style.backgroundColor="#c5b9a5"
       }else{
-        tuote3.style.backgroundColor="white"
+        tuote3.style.backgroundColor="#ffd283"
       }
       if (laskuri<asia4hin){
-        tuote4.style.backgroundColor="#838181"
+        tuote4.style.backgroundColor="#c5b9a5"
       }else{
-        tuote4.style.backgroundColor="white"
+        tuote4.style.backgroundColor="#ffd283"
       }
       if (laskuri<asia5hin){
-        tuote5.style.backgroundColor="#838181"
+        tuote5.style.backgroundColor="#c5b9a5"
       }else{
-        tuote5.style.backgroundColor="white"
+        tuote5.style.backgroundColor="#ffd283"
       }
       if (laskuri<asia6hin){
-        tuote6.style.backgroundColor="#838181"
+        tuote6.style.backgroundColor="#c5b9a5"
       }else{
-        tuote6.style.backgroundColor="white"
+        tuote6.style.backgroundColor="#ffd283"
       }
       if (laskuri<asia7hin){
-        tuote7.style.backgroundColor="#838181"
+        tuote7.style.backgroundColor="#c5b9a5"
       }else{
-        tuote7.style.backgroundColor="white"
+        tuote7.style.backgroundColor="#ffd283"
       }
       if (laskuri<asia8hin){
-        tuote8.style.backgroundColor="#838181"
+        tuote8.style.backgroundColor="#c5b9a5"
       }else{
-        tuote8.style.backgroundColor="white"
+        tuote8.style.backgroundColor="#ffd283"
       }
       
 },100)
@@ -176,3 +174,8 @@ function addclick(lol){
     click=click+lol
 }
 
+function vaihdavari() {
+    var vari = document.getElementById("vari")
+    console.log(vari.value)
+    document.body.style.backgroundColor=vari.value
+}
