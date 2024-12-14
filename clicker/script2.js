@@ -15,6 +15,7 @@ var asia5 = document.getElementById("asia5")
 var asia6 = document.getElementById("asia6")
 var asia7 = document.getElementById("asia7")
 var asia8 = document.getElementById("asia8")
+var asia9 = document.getElementById("asia9")
 var levelcount = 50
 var laskuri = 0
 var click = 1
@@ -27,6 +28,7 @@ var asia5hin = 150000
 var asia6hin = 3000000
 var asia7hin = 50000000
 var asia8hin = 100000000
+var asia9hin = 12345678910
 var munch = new Audio('MUNCH.mp3')
 setInterval(function(){
     laskuri = laskuri + brsec/400
@@ -164,6 +166,17 @@ function buyshop(lol){
             laskuri=laskuri-asia8hin
             asia8hin = (Math.round(asia8hin * 1.3))
             asia8.innerHTML=""+asia8hin   
+            borgors.innerHTML=(Math.round(laskuri))
+            
+            
+        }
+    }
+    if (lol == 9){
+        if (laskuri >= asia9hin){
+            brsec = brsec+100000
+            laskuri=laskuri-asia9hin
+            asia9hin = (Math.round(asia9hin * 1.3))
+            asia9.innerHTML=""+asia9hin   
             borgors.innerHTML=(Math.round(laskuri))
             
             
