@@ -22,13 +22,13 @@ var click = 1
 var asia1hin = 10
 var brsec = 0
 var asia2hin = 100
-var asia3hin = 2000
-var asia4hin = 10000
-var asia5hin = 150000
-var asia6hin = 3000000
-var asia7hin = 50000000
+var asia3hin = 500
+var asia4hin = 2000
+var asia5hin = 7000
+var asia6hin = 50000
+var asia7hin = 10000000
 var asia8hin = 100000000
-var asia9hin = 12345678910
+var asia9hin = 1234567890
 var munch = new Audio('munch.mp3')
 vaihdavari()
 setInterval(function(){
@@ -93,8 +93,9 @@ function addborgor(){
 function buyshop(lol){
     if(lol==1){
         if (laskuri >= asia1hin){
+            brsec = brsec + 1
             laskuri=laskuri-asia1hin
-            asia1hin = (Math.round(asia1hin * 10.1))
+            asia1hin = (Math.round(asia1hin * 1.3))
             borgors.innerHTML=(Math.round(laskuri))
             asia1.innerHTML=""+asia1hin
         }
@@ -102,7 +103,7 @@ function buyshop(lol){
     }
     if (lol == 2){
         if (laskuri >= asia2hin){
-            brsec = brsec+1
+            brsec = brsec+4
             laskuri=laskuri-asia2hin
             asia2hin = (Math.round(asia2hin * 1.3))
             asia2.innerHTML=""+asia2hin
@@ -124,7 +125,7 @@ function buyshop(lol){
     }
     if (lol == 4){
         if (laskuri >= asia4hin){
-            brsec = brsec+100
+            brsec = brsec+20
             laskuri=laskuri-asia4hin
             asia4hin = (Math.round(asia4hin * 1.3))
             asia4.innerHTML=""+asia4hin   
@@ -135,7 +136,7 @@ function buyshop(lol){
     }
     if (lol == 5){
         if (laskuri >= asia5hin){
-            brsec = brsec+700
+            brsec = brsec+60
             laskuri=laskuri-asia5hin
             asia5hin = (Math.round(asia5hin * 1.3))
             asia5.innerHTML=""+asia5hin   
@@ -146,7 +147,7 @@ function buyshop(lol){
     }
     if (lol == 6){
         if (laskuri >= asia6hin){
-            brsec = brsec+2000
+            brsec = brsec+70
             laskuri=laskuri-asia6hin
             asia6hin = (Math.round(asia6hin * 1.3))
             asia6.innerHTML=""+asia6hin   
@@ -157,7 +158,7 @@ function buyshop(lol){
     }
     if (lol == 7){
         if (laskuri >= asia7hin){
-            brsec = brsec+10000
+            brsec = brsec+100
             laskuri=laskuri-asia7hin
             asia7hin = (Math.round(asia7hin * 1.3))
             asia7.innerHTML=""+asia7hin   
@@ -168,7 +169,7 @@ function buyshop(lol){
     }
     if (lol == 8){
         if (laskuri >= asia8hin){
-            brsec = brsec+100000
+            brsec = brsec+200
             laskuri=laskuri-asia8hin
             asia8hin = (Math.round(asia8hin * 1.3))
             asia8.innerHTML=""+asia8hin   
@@ -179,7 +180,7 @@ function buyshop(lol){
     }
     if (lol == 9){
         if (laskuri >= asia9hin){
-            brsec = brsec+100000
+            brsec = brsec+2000
             laskuri=laskuri-asia9hin
             asia9hin = (Math.round(asia9hin * 1.3))
             asia9.innerHTML=""+asia9hin   
@@ -189,9 +190,7 @@ function buyshop(lol){
         }
     }
 }
-function addclick(lol){
-    click=click+lol
-}
+
 
 function vaihdavari() {
     var vari = document.getElementById("vari")
