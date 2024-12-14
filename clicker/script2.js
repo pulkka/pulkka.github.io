@@ -29,7 +29,8 @@ var asia6hin = 3000000
 var asia7hin = 50000000
 var asia8hin = 100000000
 var asia9hin = 12345678910
-var munch = new Audio('MUNCH.mp3')
+var munch = new Audio('munch.mp3')
+vaihdavari()
 setInterval(function(){
     laskuri = laskuri + brsec/400
     borgors.innerHTML=(Math.round(laskuri))
@@ -76,6 +77,11 @@ setInterval(function(){
         tuote8.style.backgroundColor="#c5b9a5"
       }else{
         tuote8.style.backgroundColor="#ffd283"
+      }
+      if (laskuri<asia9hin){
+        tuote9.style.backgroundColor="#c5b9a5"
+      }else{
+        tuote9.style.backgroundColor="#ffd283"
       }
       
 },100)
