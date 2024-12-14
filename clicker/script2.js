@@ -4,11 +4,17 @@ var tuote2 = document.getElementById("tuote2")
 var tuote3 = document.getElementById("tuote3")
 var tuote4 = document.getElementById("tuote4")
 var tuote5 = document.getElementById("tuote5")
+var tuote6 = document.getElementById("tuote6")
+var tuote7 = document.getElementById("tuote7")
+var tuote8 = document.getElementById("tuote8")
 var asia1 = document.getElementById("asia1")
 var asia2 = document.getElementById("asia2")
 var asia3 = document.getElementById("asia3")
 var asia4 = document.getElementById("asia4")
 var asia5 = document.getElementById("asia5")
+var asia6 = document.getElementById("asia6")
+var asia7 = document.getElementById("asia7")
+var asia8 = document.getElementById("asia8")
 var level = document.getElementById("level").value;
 var levelcount = 50
 var laskuri = 0
@@ -19,6 +25,9 @@ var asia2hin = 100
 var asia3hin = 2000
 var asia4hin = 10000
 var asia5hin = 150000
+var asia6hin = 3000000
+var asia7hin = 50000000
+var asia8hin = 100000000
 var munch = new Audio('MUNCH.mp3')
 setInterval(function(){
     laskuri = laskuri + brsec/40
@@ -52,6 +61,21 @@ setInterval(function(){
         tuote5.style.backgroundColor="#838181"
       }else{
         tuote5.style.backgroundColor="white"
+      }
+      if (laskuri<asia6hin){
+        tuote6.style.backgroundColor="#838181"
+      }else{
+        tuote6.style.backgroundColor="white"
+      }
+      if (laskuri<asia7hin){
+        tuote7.style.backgroundColor="#838181"
+      }else{
+        tuote7.style.backgroundColor="white"
+      }
+      if (laskuri<asia8hin){
+        tuote8.style.backgroundColor="#838181"
+      }else{
+        tuote8.style.backgroundColor="white"
       }
       
 },100)
@@ -114,7 +138,39 @@ function buyshop(lol){
             
         }
     }
-    
+    if (lol == 6){
+        if (laskuri >= asia6hin){
+            brsec = brsec+2000
+            laskuri=laskuri-asia6hin
+            asia6hin = (Math.round(asia6hin * 1.3))
+            asia6.innerHTML=""+asia6hin   
+            borgors.innerHTML=(Math.round(laskuri))
+            
+            
+        }
+    }
+    if (lol == 7){
+        if (laskuri >= asia7hin){
+            brsec = brsec+5000
+            laskuri=laskuri-asia7hin
+            asia7hin = (Math.round(asia7hin * 1.3))
+            asia7.innerHTML=""+asia7hin   
+            borgors.innerHTML=(Math.round(laskuri))
+            
+            
+        }
+    }
+    if (lol == 8){
+        if (laskuri >= asia8hin){
+            brsec = brsec+7000
+            laskuri=laskuri-asia8hin
+            asia8hin = (Math.round(asia8hin * 1.3))
+            asia8.innerHTML=""+asia8hin   
+            borgors.innerHTML=(Math.round(laskuri))
+            
+            
+        }
+    }
 }
 function addclick(lol){
     click=click+lol
