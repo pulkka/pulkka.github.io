@@ -17,6 +17,7 @@ var asia7 = document.getElementById("asia7")
 var asia8 = document.getElementById("asia8")
 var asia9 = document.getElementById("asia9")
 var shop = document.getElementById("shop")
+var showshop = document.getElementById("show-shop")
 var levelcount = 50
 var laskuri = parseInt(window.localStorage.getItem('laskuri') || "0");
 var click = 1
@@ -226,6 +227,11 @@ setInterval(function(){
 function toggleShop() {
   if(shop.style.display=="block"){
     shop.style.display="none"
+    showshop.innerHTML="SHOP"
   }
-  else{shop.style.display="block"}
+  else{
+    shop.style.display="block"
+    showshop.innerHTML="BORGOR"
+  }
+  
 }
