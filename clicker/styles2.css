@@ -45,6 +45,7 @@ table {
     border-radius: 0px;
     position: absolute;
     top: 0px;
+    font-family: "Chewy", system-ui;
   }
 #brgr {
     cursor: pointer;
@@ -63,6 +64,7 @@ td{
 }
 body{
   background-color: rgb(119, 40, 95);
+  
 }
 .shop-img {
   width: 50px;
@@ -76,4 +78,15 @@ body{
   float: left;
   padding-left: 50px;
   padding-top: 10px;
+}
+.barriecito-regular {
+  font-family: "Barriecito", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 600px) {
+  #shop {
+    width: 600px;
+  }
 }

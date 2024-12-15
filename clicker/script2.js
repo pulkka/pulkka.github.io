@@ -17,18 +17,18 @@ var asia7 = document.getElementById("asia7")
 var asia8 = document.getElementById("asia8")
 var asia9 = document.getElementById("asia9")
 var levelcount = 50
-var laskuri = 0
+var laskuri = parseInt(window.localStorage.getItem('laskuri') || "0");
 var click = 1
-var asia1hin = 10
+var asia1hin = parseInt(window.localStorage.getItem('asia1hin') || "10");
 var brsec = 0
-var asia2hin = 100
-var asia3hin = 500
-var asia4hin = 2000
-var asia5hin = 7000
-var asia6hin = 50000
-var asia7hin = 10000000
-var asia8hin = 100000000
-var asia9hin = 1234567890
+var asia2hin = parseInt(window.localStorage.getItem('asia2hin') || "100");
+var asia3hin = parseInt(window.localStorage.getItem('asia3hin') || "500");
+var asia4hin = parseInt(window.localStorage.getItem('asia4hin') || "2000");
+var asia5hin = parseInt(window.localStorage.getItem('asia5hin') || "7000");
+var asia6hin = parseInt(window.localStorage.getItem('asia6hin') || "50000");
+var asia7hin = parseInt(window.localStorage.getItem('asia7hin') || "10000000");
+var asia8hin = parseInt(window.localStorage.getItem('asia8hin') || "100000000");
+var asia9hin = parseInt(window.localStorage.getItem('asia9hin') || "1234567890");
 var munch = new Audio('munch.mp3')
 vaihdavari()
 setInterval(function(){
@@ -37,6 +37,7 @@ setInterval(function(){
 },10)
 setInterval(function(){
     borgors.innerHTML=(Math.round(laskuri))
+    asia1=asia1hin
     
     if (laskuri<asia1hin){
         tuote1.style.backgroundColor="#c5b9a5"
@@ -197,3 +198,26 @@ function vaihdavari() {
     console.log(vari.value)
     document.body.style.backgroundColor=vari.value
 }
+
+setInterval(function(){
+  localStorage.setItem('laskuri', laskuri);
+  localStorage.setItem('brsec', brsec);
+  localStorage.setItem('asia1hin', asia1hin);
+  localStorage.setItem('asia2hin', asia2hin);
+  localStorage.setItem('asia3hin', asia3hin);
+  localStorage.setItem('asia4hin', asia4hin);
+  localStorage.setItem('asia5hin', asia5hin);
+  localStorage.setItem('asia6hin', asia6hin);
+  localStorage.setItem('asia7hin', asia7hin);
+  localStorage.setItem('asia8hin', asia8hin);
+  localStorage.setItem('asia9hin', asia9hin);
+  localStorage.setItem('asia1', asia1);
+  localStorage.setItem('asia2', asia2);
+  localStorage.setItem('asia3', asia3);
+  localStorage.setItem('asia4', asia4);
+  localStorage.setItem('asia5', asia5);
+  localStorage.setItem('asia6', asia6);
+  localStorage.setItem('asia7', asia7);
+  localStorage.setItem('asia8', asia8);
+  localStorage.setItem('asia9', asia9);
+},5000)
