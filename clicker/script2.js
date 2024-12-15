@@ -16,6 +16,7 @@ var asia6 = document.getElementById("asia6")
 var asia7 = document.getElementById("asia7")
 var asia8 = document.getElementById("asia8")
 var asia9 = document.getElementById("asia9")
+var shop = document.getElementById("shop")
 var levelcount = 50
 var laskuri = parseInt(window.localStorage.getItem('laskuri') || "0");
 var click = 1
@@ -37,7 +38,7 @@ setInterval(function(){
 },10)
 setInterval(function(){
     borgors.innerHTML=(Math.round(laskuri))
-    asia1=asia1hin
+    
     
     if (laskuri<asia1hin){
         tuote1.style.backgroundColor="#c5b9a5"
@@ -221,3 +222,10 @@ setInterval(function(){
   localStorage.setItem('asia8', asia8);
   localStorage.setItem('asia9', asia9);
 },5000)
+
+function toggleShop() {
+  if(shop.style.display=="block"){
+    shop.style.display="none"
+  }
+  else{shop.style.display="block"}
+}
