@@ -4,7 +4,10 @@
     width: 220px;
 }
 html{
-    
+  
+    touch-action: pan-x pan-y;
+    height:100%;
+  
     user-select: none;
     -webkit-user-drag: none;
     -webkit-user-drag: none;

@@ -19,10 +19,10 @@ var asia9 = document.getElementById("asia9")
 var shop = document.getElementById("shop")
 var showshop = document.getElementById("show-shop")
 var levelcount = 50
+var brsec = parseInt(window.localStorage.getItem('brsec') || "0");
 var laskuri = parseInt(window.localStorage.getItem('laskuri') || "0");
 var click = 1
 var asia1hin = parseInt(window.localStorage.getItem('asia1hin') || "10");
-var brsec = 0
 var asia2hin = parseInt(window.localStorage.getItem('asia2hin') || "100");
 var asia3hin = parseInt(window.localStorage.getItem('asia3hin') || "500");
 var asia4hin = parseInt(window.localStorage.getItem('asia4hin') || "2000");
@@ -33,6 +33,15 @@ var asia8hin = parseInt(window.localStorage.getItem('asia8hin') || "100000000");
 var asia9hin = parseInt(window.localStorage.getItem('asia9hin') || "1234567890");
 var munch = new Audio('munch.mp3')
 vaihdavari()
+asia1.innerHTML =""+ asia1hin
+asia2.innerHTML =""+ asia2hin
+asia3.innerHTML =""+ asia3hin
+asia4.innerHTML =""+ asia4hin
+asia5.innerHTML =""+ asia5hin
+asia6.innerHTML =""+ asia6hin
+asia7.innerHTML =""+ asia7hin
+asia8.innerHTML =""+ asia8hin
+asia9.innerHTML =""+ asia9hin
 setInterval(function(){
     laskuri = laskuri + brsec/400
     borgors.innerHTML=(Math.round(laskuri))
