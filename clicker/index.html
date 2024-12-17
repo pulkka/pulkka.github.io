@@ -19,11 +19,16 @@
 </head>
 <body>
     <div id="shop-controls">
-        <button id="show-shop" onclick="toggleShop()">SHOP</button>
+        <button type="button" class="btn btn-success" id="show-shop" onclick="toggleShop()">SHOP</button>
     </div>
     <div id="shop" style="height: 100%; ; overflow-y: scroll;">
         <table>
-            <tr id="tuote1"id="border"onclick="buyshop(1)">
+            <tr>
+                <td  id="no">
+                    <h3>AUTOCLICKERS</h3>
+                </td>
+            </tr>
+            <tr class="shp"id="tuote1"id="border"onclick="buyshop(1)">
                 <td>
                     <div class="shop-img">
                         <img src = "cursor.png" alt="eror">
@@ -43,7 +48,7 @@
 
                 </td>
             </tr>
-            <tr id="tuote2"id="border"onclick="buyshop(2)">
+            <tr class="shp"id="tuote2"id="border"onclick="buyshop(2)">
                 <td>
                     <div class="shop-img">
                         <img src = "cartoon-1299636_1280.png" alt="eror">
@@ -63,7 +68,7 @@
 
                 </td>
             </tr>
-            <tr id="tuote3"id="border"onclick="buyshop(3)">
+            <tr class="shp"id="tuote3"id="border"onclick="buyshop(3)">
                 <td>
                     <div class="shop-img">
                         <img src = "restaurant-6281067_1280.png" alt="eror">
@@ -83,7 +88,7 @@
 
                 </td>
             </tr>
-            <tr id="tuote4"id="border"onclick="buyshop(4)">
+            <tr class="shp"id="tuote4"id="border"onclick="buyshop(4)">
                 <td>
                     <div class="shop-img">
                         <img src = "coal-mine-297488_1280.png" alt="eror">
@@ -103,7 +108,7 @@
 
                 </td>
             </tr>
-            <tr id="tuote5"id="border"onclick="buyshop(5)">
+            <tr class="shp"id="tuote5"id="border"onclick="buyshop(5)">
                 <td>
                     <div class="shop-img">
                         <img src = "factory-6283505_1280.png" alt="eror">
@@ -123,7 +128,7 @@
 
                 </td>
             </tr>
-            <tr id="tuote6"id="border"onclick="buyshop(6)">
+            <tr class="shp"id="tuote6"id="border"onclick="buyshop(6)">
                 <td>
                     <div class="shop-img">
                         <img src = "chemistry-306977_1280.png" alt="eror">
@@ -143,7 +148,7 @@
 
                 </td>
             </tr>
-            <tr id="tuote7"id="border"onclick="buyshop(7)">
+            <tr class="shp"id="tuote7"id="border"onclick="buyshop(7)">
                 <td>
                     <div class="shop-img">
                         <img src = "rocket-4857953_1280.png" alt="eror">
@@ -163,7 +168,7 @@
 
                 </td>
             </tr>
-            <tr id="tuote8"id="border"onclick="buyshop(8)">
+            <tr class="shp"id="tuote8"id="border"onclick="buyshop(8)">
                 <td>
                     <div class="shop-img">
                         <img src = "portal.png" alt="eror">
@@ -183,7 +188,7 @@
 
                 </td>
             </tr>
-            <tr id="tuote9"id="border"onclick="buyshop(9)">
+            <tr class="shp"id="tuote9"id="border"onclick="buyshop(9)">
                 <td>
                     <div class="shop-img">
                         <img src = "watch-42803_1280.png" alt="eror">
@@ -203,7 +208,26 @@
 
                 </td>
             </tr>
-            
+            <tr>
+                <td  id="no">
+                    <h3>UPGRADES</h3>
+                </td>
+            </tr>
+            <tr class="shp"id="tuote10"id="border"onclick="buyshop(10)">
+                <td>
+                    <div class="shop-img">
+                        <img src = "golden.png" alt="eror">
+                    </div>
+                    <div class="shop-price">
+                        <p>OP CURSOR</p>
+                        <i id ="asia10">10000</i>🍔
+                        <p>
+                        You Get More Burgers From CLicking
+                        </p>
+                    </div>
+                    
+                </td>
+            </tr>
             
         </table>
     </div>
@@ -213,13 +237,21 @@
         <img draggable="false" id="brgr"onclick="addborgor()"src="burger.png"style="width:200px;height:200px;">
     </div>
     <div id="color">
+        <button onclick="togglesettings()"type="button" class="btn btn-secondary" id="settings-ctrl">settings</button>
+    </div>
+    <div id="settings">
         <label for="vari">Background Color</label>
         <input id="vari" type="color" value="#b507a8">
-        <button  type="button" class="btn btn-primary" onclick="vaihdavari()">Submit</button>
+        <button  type="button" class="btn btn-primary" onclick="vaihdavari()">OK</button>
         <br>
         <br>
         <button onclick="localStorage.clear();" type="button" class="btn btn-warning">Restart</button>
-        <h5>The game saves in 5 seconds! reload fast</h5>
+        <br>
+        <br>
+        <button onclick="togglexmas()">XMAS</button>
+        
+
+
     </div>
 <script src="script2.js"></script>
 

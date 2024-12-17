@@ -35,7 +35,6 @@ table {
     border-spacing: 0px;
     border-collapse: collapse;
     user-select: none;
-    
     overflow-y: scroll;
   }
   #border{
@@ -54,12 +53,13 @@ table {
   }
 #brgr {
     cursor: pointer;
+    transition: .0.5s;
 }
-td:hover{
-  background-color: #bdbcbc !important;
+.shp td:hover{
+  background-color: #bdbcbc;
 }
-td:active{
-  background-color: #837272 !important;
+.shp td:active{
+  background-color: #837272;
 }
 td{
   border-radius: 0px;
@@ -93,6 +93,16 @@ body{
 #shop-controls {
   display: none;
 }
+#upgrades-controls {
+  float: right;
+}
+#upgrades {
+  position: absolute;
+  display: none;
+  background-color: white;
+  height: 200px;
+  padding-left: 520px;
+}
 @media only screen and (max-width: 600px) {
   #shop-controls {
     z-index: 999;
@@ -103,7 +113,7 @@ body{
   #shop {
     width: 380px;
     overflow-x: hidden;
-    display: none; /* TODO: change to 'block' from javascript */
+    display: none;
   }
   #color {
     margin-left: 0px;
@@ -114,4 +124,24 @@ body{
   #clickme {
     margin-left: calc(50% - 110px);
   }
+  #settings{
+    
+  }
+}
+#no{
+  background-color: #ffc400 !important;
+
+}
+#settings{
+  bottom: 400px;
+  position: absolute;
+  margin-left: 45%;
+  background-color: aqua;
+  border: black 10px;
+  z-index: 101001010101;
+  display: none;
+  border: 2px solid;
+}
+#brgr:active{
+  transform: scale(1.2);
 }
