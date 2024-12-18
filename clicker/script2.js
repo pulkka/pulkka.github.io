@@ -26,8 +26,9 @@ var settings = document.getElementById("settings")
 var settingsctrl = document.getElementById("settings-ctrl")
 var levelcount = 50
 var brsec = parseInt(window.localStorage.getItem('brsec') || "0");
-var laskuri = parseInt(window.localStorage.getItem('laskuri') || "0");
-var click = 1
+var laskuri = parseFloat(window.localStorage.getItem('laskuri') || "0");
+var prestigee = parseFloat(window.localStorage.getItem('prestigee') || "1");
+var click =  parseFloat(window.localStorage.getItem('click') || 1 * prestigee); console.log(click)
 var asia1hin = parseInt(window.localStorage.getItem('asia1hin') || "10");
 var asia2hin = parseInt(window.localStorage.getItem('asia2hin') || "100");
 var asia3hin = parseInt(window.localStorage.getItem('asia3hin') || "500");
@@ -45,6 +46,8 @@ var isxmas = 0
 var ishat = 0
 var issmile = 0
 var isweird = 0
+
+var prestigetimes = parseInt(window.localStorage.getItem('prestigetimes') || "1");
 vaihdavari()
 asia1.innerHTML =""+ asia1hin
 asia2.innerHTML =""+ asia2hin
@@ -56,6 +59,7 @@ asia7.innerHTML =""+ asia7hin
 asia8.innerHTML =""+ asia8hin
 asia9.innerHTML =""+ asia9hin
 asia10.innerHTML =""+ asia10hin
+asia11.innerHTML =""+ asia11hin
 setInterval(function(){
     laskuri = laskuri + brsec/400
     borgors.innerHTML=(Math.round(laskuri))
@@ -129,7 +133,7 @@ function addborgor(){
 function buyshop(lol){
     if(lol==1){
         if (laskuri >= asia1hin){
-            brsec = brsec + 1
+            brsec = brsec + 1*prestigee
             laskuri=laskuri-asia1hin
             asia1hin = (Math.round(asia1hin * 1.2))
             borgors.innerHTML=(Math.round(laskuri))
@@ -139,7 +143,7 @@ function buyshop(lol){
     }
     if (lol == 2){
         if (laskuri >= asia2hin){
-            brsec = brsec+4
+            brsec = brsec+4*prestigee
             laskuri=laskuri-asia2hin
             asia2hin = (Math.round(asia2hin * 1.2))
             asia2.innerHTML=""+asia2hin
@@ -150,7 +154,7 @@ function buyshop(lol){
     }
     if (lol == 3){
         if (laskuri >= asia3hin){
-            brsec = brsec+10
+            brsec = brsec+10*prestigee
             laskuri=laskuri-asia3hin
             asia3hin = (Math.round(asia3hin * 1.2))
             asia3.innerHTML=""+asia3hin   
@@ -161,7 +165,7 @@ function buyshop(lol){
     }
     if (lol == 4){
         if (laskuri >= asia4hin){
-            brsec = brsec+20
+            brsec = brsec+20*prestigee
             laskuri=laskuri-asia4hin
             asia4hin = (Math.round(asia4hin * 1.2))
             asia4.innerHTML=""+asia4hin   
@@ -172,7 +176,7 @@ function buyshop(lol){
     }
     if (lol == 5){
         if (laskuri >= asia5hin){
-            brsec = brsec+60
+            brsec = brsec+60*prestigee
             laskuri=laskuri-asia5hin
             asia5hin = (Math.round(asia5hin * 1.2))
             asia5.innerHTML=""+asia5hin   
@@ -183,7 +187,7 @@ function buyshop(lol){
     }
     if (lol == 6){
         if (laskuri >= asia6hin){
-            brsec = brsec+100
+            brsec = brsec+100*prestigee
             laskuri=laskuri-asia6hin
             asia6hin = (Math.round(asia6hin * 1.2))
             asia6.innerHTML=""+asia6hin   
@@ -194,7 +198,7 @@ function buyshop(lol){
     }
     if (lol == 7){
         if (laskuri >= asia7hin){
-            brsec = brsec+500
+            brsec = brsec+500*prestigee
             laskuri=laskuri-asia7hin
             asia7hin = (Math.round(asia7hin * 1.2))
             asia7.innerHTML=""+asia7hin   
@@ -205,7 +209,7 @@ function buyshop(lol){
     }
     if (lol == 8){
         if (laskuri >= asia8hin){
-            brsec = brsec+1000
+            brsec = brsec+1000*prestigee
             laskuri=laskuri-asia8hin
             asia8hin = (Math.round(asia8hin * 1.2))
             asia8.innerHTML=""+asia8hin   
@@ -216,7 +220,7 @@ function buyshop(lol){
     }
     if (lol == 9){
         if (laskuri >= asia9hin){
-            brsec = brsec+10000
+            brsec = brsec+10000*prestigee
             laskuri=laskuri-asia9hin
             asia9hin = (Math.round(asia9hin * 1.2))
             asia9.innerHTML=""+asia9hin   
@@ -227,7 +231,7 @@ function buyshop(lol){
     }
     if (lol == 10){
       if (laskuri >= asia10hin){
-          click = click * 10
+          click = click * 10*prestigee
           laskuri=laskuri-asia10hin
           asia10hin = (Math.round(asia10hin * 100.2))
           asia10.innerHTML=""+asia10hin   
@@ -269,17 +273,10 @@ setInterval(function(){
     localStorage.setItem('asia8hin', asia8hin);
     localStorage.setItem('asia9hin', asia9hin);
     localStorage.setItem('asia10hin', asia10hin);
-    localStorage.setItem('asia1', asia1);
-    localStorage.setItem('asia2', asia2);
-    localStorage.setItem('asia3', asia3);
-    localStorage.setItem('asia4', asia4);
-    localStorage.setItem('asia5', asia5);
-    localStorage.setItem('asia6', asia6);
-    localStorage.setItem('asia7', asia7);
-    localStorage.setItem('asia8', asia8);
-    localStorage.setItem('asia9', asia9);
-    localStorage.setItem('asia9', asia9);
-    localStorage.setItem('asia10', asia10);
+    localStorage.setItem('asia11hin', asia11hin);
+    localStorage.setItem('prestigee', prestigee);
+    localStorage.setItem('prestigetimes', prestigetimes);
+    localStorage.setItem('click', click);
 },5000)
 
 function toggleShop() {
@@ -355,4 +352,53 @@ function costume(lol){
 function restart(){
   localStorage.clear();
   location.reload()
+}
+function prestige(){
+  if(laskuri>=1000000000*prestigetimes){
+    laskuri = 0
+    brsec = 0
+    asia1hin = 10
+    asia2hin = 100
+    asia3hin =  500
+    asia4hin = 2000
+    asia5hin =  7000
+    asia6hin = 25000
+    asia7hin = 100000
+    asia8hin = 1000000
+    asia9hin = 12345678
+    asia10hin =10000
+    asia11hin =50000
+    asia1.innerHTML =""+ asia1hin
+    asia2.innerHTML =""+ asia2hin
+    asia3.innerHTML =""+ asia3hin
+    asia4.innerHTML =""+ asia4hin
+    asia5.innerHTML =""+ asia5hin
+    asia6.innerHTML =""+ asia6hin
+    asia7.innerHTML =""+ asia7hin
+    asia8.innerHTML =""+ asia8hin
+    asia9.innerHTML =""+ asia9hin
+    asia10.innerHTML =""+ asia10hin
+    asia11.innerHTML =""+ asia11hin
+    localStorage.setItem('laskuri', laskuri);
+    localStorage.setItem('brsec', brsec);
+    localStorage.setItem('asia1hin', asia1hin);
+    localStorage.setItem('asia2hin', asia2hin);
+    localStorage.setItem('asia3hin', asia3hin);
+    localStorage.setItem('asia4hin', asia4hin);
+    localStorage.setItem('asia5hin', asia5hin);
+    localStorage.setItem('asia6hin', asia6hin);
+    localStorage.setItem('asia7hin', asia7hin);
+    localStorage.setItem('asia8hin', asia8hin);
+    localStorage.setItem('asia9hin', asia9hin);
+    localStorage.setItem('asia10hin', asia10hin);
+    localStorage.setItem('asia11hin', asia11hin);
+    localStorage.setItem('click', click);
+    prestigetimes = prestigetimes +1
+    prestigee = prestigee + 0.5
+    click = click * prestigee
+  }
+  else  {
+    alert("u dont have 1000000000 burgers ):")
+  }
+  
 }
