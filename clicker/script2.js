@@ -42,6 +42,7 @@ var brgr = document.getElementById("brgr");
 var isxmas = 0
 var ishat = 0
 var issmile = 0
+soundEffect.autoplay = true;
 vaihdavari()
 asia1.innerHTML =""+ asia1hin
 asia2.innerHTML =""+ asia2hin
