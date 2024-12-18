@@ -290,7 +290,17 @@ function togglexmas(){
       isxmas = 0
     }
 }
-
+function costume(lol){
+  if(lol==1){
+    if (isxmas == 0){
+      brgr.src = "xmasbrgr.png"
+      isxmas = 1
+    } else{
+      brgr.src = "BORGOR.png"
+      isxmas = 0
+    }
+  }
+}
 
 
 
