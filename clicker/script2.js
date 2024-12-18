@@ -40,6 +40,8 @@ var asia10hin = parseInt(window.localStorage.getItem('asia10hin') || "10000");
 var munch = new Audio('munch.mp3')
 var brgr = document.getElementById("brgr");
 var isxmas = 0
+var ishat = 0
+var issmile = 0
 vaihdavari()
 asia1.innerHTML =""+ asia1hin
 asia2.innerHTML =""+ asia2hin
@@ -298,6 +300,24 @@ function costume(lol){
     } else{
       brgr.src = "BORGOR.png"
       isxmas = 0
+    }
+  }
+  if(lol==2){
+    if (ishat == 0){
+      brgr.src = "burgerwithhat.png"
+      ishat = 1
+    } else{
+      brgr.src = "BORGOR.png"
+      ishat = 0
+    }
+  }
+  if(lol==3){
+    if (issmile == 0){
+      brgr.src = "smileybrgr.png"
+      issmile = 1
+    } else{
+      brgr.src = "BORGOR.png"
+      issmile = 0
     }
   }
 }

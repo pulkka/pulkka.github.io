@@ -4,7 +4,7 @@
     width: 220px;
 }
 html{
-  
+    touch-action: manipulation;
     touch-action: pan-x pan-y;
     height:100%;
   
@@ -126,14 +126,15 @@ body{
   }
 }
 #no{
-  background-color: #ffc400 !important;
+  background-color: #ecb709 !important;
 
 }
 #settings{
+  border-radius: 10px;
   bottom: 400px;
   position: absolute;
   margin-left: 45%;
-  background-color: aqua;
+  background-color: rgb(204, 165, 36);
   border: black 10px;
   z-index: 101001010101;
   display: none;
