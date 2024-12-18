@@ -354,5 +354,5 @@ function costume(lol){
 
 function restart(){
   localStorage.clear();
-  location.replace("google.com")
+  location.reload()
 }

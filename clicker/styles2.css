@@ -65,8 +65,10 @@ td{
   border-radius: 0px;
 }
 #color {
+  position: absolute;
   margin-left: 95%;
   z-index: 90;
+  bottom: 96%;
 }
 body{
   background-color: rgb(119, 40, 95);
@@ -118,8 +120,9 @@ body{
   #color {
     margin-left: 0px;
     position: absolute;
-    top: calc(100% - 150px);
     height: 150px;
+    bottom: 82%;
+    left: 307px;
   }
   #clickme {
     margin-left: calc(50% - 110px);
