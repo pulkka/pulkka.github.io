@@ -19,6 +19,7 @@ var asia7 = document.getElementById("asia7")
 var asia8 = document.getElementById("asia8")
 var asia9 = document.getElementById("asia9")
 var asia10 = document.getElementById("asia10")
+var asia11 = document.getElementById("asia11")
 var shop = document.getElementById("shop")
 var showshop = document.getElementById("show-shop")
 var settings = document.getElementById("settings")
@@ -37,12 +38,13 @@ var asia7hin = parseInt(window.localStorage.getItem('asia7hin') || "100000");
 var asia8hin = parseInt(window.localStorage.getItem('asia8hin') || "1000000");
 var asia9hin = parseInt(window.localStorage.getItem('asia9hin') || "12345678");
 var asia10hin = parseInt(window.localStorage.getItem('asia10hin') || "10000");
+var asia11hin = parseInt(window.localStorage.getItem('asia11hin') || "50000");
 var munch = new Audio('munch.mp3')
 var brgr = document.getElementById("brgr");
 var isxmas = 0
 var ishat = 0
 var issmile = 0
-soundEffect.autoplay = true;
+var isweird = 0
 vaihdavari()
 asia1.innerHTML =""+ asia1hin
 asia2.innerHTML =""+ asia2hin
@@ -111,6 +113,11 @@ setInterval(function(){
         tuote10.style.backgroundColor="#c5b9a5"
       }else{
         tuote10.style.backgroundColor="#ffd283"
+      }
+      if (laskuri<asia11hin){
+        tuote11.style.backgroundColor="#c5b9a5"
+      }else{
+        tuote11.style.backgroundColor="#ffd283"
       }
       
 },100)
@@ -229,6 +236,17 @@ function buyshop(lol){
           
       }
   }
+  if (lol == 11){
+    if (laskuri >= asia11hin){
+        brsec = brsec * 2
+        laskuri=laskuri-asia11hin
+        asia11hin = (Math.round(asia11hin * 112))
+        asia11.innerHTML=""+asia11hin   
+        borgors.innerHTML=(Math.round(laskuri))
+        
+        
+    }
+}
 }
 
 
@@ -321,7 +339,20 @@ function costume(lol){
       issmile = 0
     }
   }
+  if(lol==4){
+    if (isweird == 0){
+      brgr.src = "weirdbrgr.png"
+      isweird = 1
+    } else{
+      brgr.src = "BORGOR.png"
+      isweird = 0
+    }
+  }
 }
 
 
 
+function restart(){
+  localStorage.clear();
+  location.replace("google.com")
+}
