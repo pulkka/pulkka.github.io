@@ -26,7 +26,7 @@ var settings = document.getElementById("settings")
 var settingsctrl = document.getElementById("settings-ctrl")
 var levelcount = 50
 var brsec = parseInt(window.localStorage.getItem('brsec') || "0");
-var laskuri = parseFloat(window.localStorage.getItem('laskuri') || "0");
+var laskin = parseFloat(window.localStorage.getItem('laskin') || "0");
 var prestigee = parseFloat(window.localStorage.getItem('prestigee') || "1");
 var click =  parseFloat(window.localStorage.getItem('click') || 1 * prestigee); console.log(click)
 var asia1hin = parseInt(window.localStorage.getItem('asia1hin') || "10");
@@ -61,64 +61,64 @@ asia9.innerHTML =""+ asia9hin
 asia10.innerHTML =""+ asia10hin
 asia11.innerHTML =""+ asia11hin
 setInterval(function(){
-    laskuri = laskuri + brsec/400
-    borgors.innerHTML=(Math.round(laskuri))
+    laskin = laskin + brsec/400
+    borgors.innerHTML=(Math.round(laskin))
 },10)
 setInterval(function(){
-    borgors.innerHTML=(Math.round(laskuri))
+    borgors.innerHTML=(Math.round(laskin))
     
     
-    if (laskuri<asia1hin){
+    if (laskin<asia1hin){
         tuote1.style.backgroundColor="#c5b9a5"
       }else{
         tuote1.style.backgroundColor="#ffd283"
       }
-      if (laskuri<asia2hin){
+      if (laskin<asia2hin){
         tuote2.style.backgroundColor="#c5b9a5"
       }else{
         tuote2.style.backgroundColor="#ffd283"
       }
-      if (laskuri<asia3hin){
+      if (laskin<asia3hin){
         tuote3.style.backgroundColor="#c5b9a5"
       }else{
         tuote3.style.backgroundColor="#ffd283"
       }
-      if (laskuri<asia4hin){
+      if (laskin<asia4hin){
         tuote4.style.backgroundColor="#c5b9a5"
       }else{
         tuote4.style.backgroundColor="#ffd283"
       }
-      if (laskuri<asia5hin){
+      if (laskin<asia5hin){
         tuote5.style.backgroundColor="#c5b9a5"
       }else{
         tuote5.style.backgroundColor="#ffd283"
       }
-      if (laskuri<asia6hin){
+      if (laskin<asia6hin){
         tuote6.style.backgroundColor="#c5b9a5"
       }else{
         tuote6.style.backgroundColor="#ffd283"
       }
-      if (laskuri<asia7hin){
+      if (laskin<asia7hin){
         tuote7.style.backgroundColor="#c5b9a5"
       }else{
         tuote7.style.backgroundColor="#ffd283"
       }
-      if (laskuri<asia8hin){
+      if (laskin<asia8hin){
         tuote8.style.backgroundColor="#c5b9a5"
       }else{
         tuote8.style.backgroundColor="#ffd283"
       }
-      if (laskuri<asia9hin){
+      if (laskin<asia9hin){
         tuote9.style.backgroundColor="#c5b9a5"
       }else{
         tuote9.style.backgroundColor="#ffd283"
       }
-      if (laskuri<asia10hin){
+      if (laskin<asia10hin){
         tuote10.style.backgroundColor="#c5b9a5"
       }else{
         tuote10.style.backgroundColor="#ffd283"
       }
-      if (laskuri<asia11hin){
+      if (laskin<asia11hin){
         tuote11.style.backgroundColor="#c5b9a5"
       }else{
         tuote11.style.backgroundColor="#ffd283"
@@ -126,127 +126,127 @@ setInterval(function(){
       
 },100)
 function addborgor(){
-    laskuri=laskuri+click
-    borgors.innerHTML=(Math.round(laskuri))
+    laskin=laskin+click
+    borgors.innerHTML=(Math.round(laskin))
     munch.play()
 }
 function buyshop(lol){
     if(lol==1){
-        if (laskuri >= asia1hin){
+        if (laskin >= asia1hin){
             brsec = brsec + 1*prestigee
-            laskuri=laskuri-asia1hin
+            laskin=laskin-asia1hin
             asia1hin = (Math.round(asia1hin * 1.2))
-            borgors.innerHTML=(Math.round(laskuri))
+            borgors.innerHTML=(Math.round(laskin))
             asia1.innerHTML=""+asia1hin
         }
         
     }
     if (lol == 2){
-        if (laskuri >= asia2hin){
+        if (laskin >= asia2hin){
             brsec = brsec+4*prestigee
-            laskuri=laskuri-asia2hin
+            laskin=laskin-asia2hin
             asia2hin = (Math.round(asia2hin * 1.2))
             asia2.innerHTML=""+asia2hin
-            borgors.innerHTML=(Math.round(laskuri))
+            borgors.innerHTML=(Math.round(laskin))
             
             
         }
     }
     if (lol == 3){
-        if (laskuri >= asia3hin){
+        if (laskin >= asia3hin){
             brsec = brsec+10*prestigee
-            laskuri=laskuri-asia3hin
+            laskin=laskin-asia3hin
             asia3hin = (Math.round(asia3hin * 1.2))
             asia3.innerHTML=""+asia3hin   
-            borgors.innerHTML=(Math.round(laskuri))
+            borgors.innerHTML=(Math.round(laskin))
             
             
         }
     }
     if (lol == 4){
-        if (laskuri >= asia4hin){
+        if (laskin >= asia4hin){
             brsec = brsec+20*prestigee
-            laskuri=laskuri-asia4hin
+            laskin=laskin-asia4hin
             asia4hin = (Math.round(asia4hin * 1.2))
             asia4.innerHTML=""+asia4hin   
-            borgors.innerHTML=(Math.round(laskuri))
+            borgors.innerHTML=(Math.round(laskin))
             
             
         }
     }
     if (lol == 5){
-        if (laskuri >= asia5hin){
+        if (laskin >= asia5hin){
             brsec = brsec+60*prestigee
-            laskuri=laskuri-asia5hin
+            laskin=laskin-asia5hin
             asia5hin = (Math.round(asia5hin * 1.2))
             asia5.innerHTML=""+asia5hin   
-            borgors.innerHTML=(Math.round(laskuri))
+            borgors.innerHTML=(Math.round(laskin))
             
             
         }
     }
     if (lol == 6){
-        if (laskuri >= asia6hin){
+        if (laskin >= asia6hin){
             brsec = brsec+100*prestigee
-            laskuri=laskuri-asia6hin
+            laskin=laskin-asia6hin
             asia6hin = (Math.round(asia6hin * 1.2))
             asia6.innerHTML=""+asia6hin   
-            borgors.innerHTML=(Math.round(laskuri))
+            borgors.innerHTML=(Math.round(laskin))
             
             
         }
     }
     if (lol == 7){
-        if (laskuri >= asia7hin){
+        if (laskin >= asia7hin){
             brsec = brsec+500*prestigee
-            laskuri=laskuri-asia7hin
+            laskin=laskin-asia7hin
             asia7hin = (Math.round(asia7hin * 1.2))
             asia7.innerHTML=""+asia7hin   
-            borgors.innerHTML=(Math.round(laskuri))
+            borgors.innerHTML=(Math.round(laskin))
             
             
         }
     }
     if (lol == 8){
-        if (laskuri >= asia8hin){
+        if (laskin >= asia8hin){
             brsec = brsec+1000*prestigee
-            laskuri=laskuri-asia8hin
+            laskin=laskin-asia8hin
             asia8hin = (Math.round(asia8hin * 1.2))
             asia8.innerHTML=""+asia8hin   
-            borgors.innerHTML=(Math.round(laskuri))
+            borgors.innerHTML=(Math.round(laskin))
             
             
         }
     }
     if (lol == 9){
-        if (laskuri >= asia9hin){
+        if (laskin >= asia9hin){
             brsec = brsec+10000*prestigee
-            laskuri=laskuri-asia9hin
+            laskin=laskin-asia9hin
             asia9hin = (Math.round(asia9hin * 1.2))
             asia9.innerHTML=""+asia9hin   
-            borgors.innerHTML=(Math.round(laskuri))
+            borgors.innerHTML=(Math.round(laskin))
             
             
         }
     }
     if (lol == 10){
-      if (laskuri >= asia10hin){
+      if (laskin >= asia10hin){
           click = click * 10*prestigee
-          laskuri=laskuri-asia10hin
+          laskin=laskin-asia10hin
           asia10hin = (Math.round(asia10hin * 100.2))
           asia10.innerHTML=""+asia10hin   
-          borgors.innerHTML=(Math.round(laskuri))
+          borgors.innerHTML=(Math.round(laskin))
           
           
       }
   }
   if (lol == 11){
-    if (laskuri >= asia11hin){
+    if (laskin >= asia11hin){
         brsec = brsec * 2
-        laskuri=laskuri-asia11hin
+        laskin=laskin-asia11hin
         asia11hin = (Math.round(asia11hin * 112))
         asia11.innerHTML=""+asia11hin   
-        borgors.innerHTML=(Math.round(laskuri))
+        borgors.innerHTML=(Math.round(laskin))
         
         
     }
@@ -261,7 +261,7 @@ function vaihdavari() {
 }
 
 setInterval(function(){
-    localStorage.setItem('laskuri', laskuri);
+    localStorage.setItem('laskin', laskin);
     localStorage.setItem('brsec', brsec);
     localStorage.setItem('asia1hin', asia1hin);
     localStorage.setItem('asia2hin', asia2hin);
@@ -354,8 +354,8 @@ function restart(){
   location.reload()
 }
 function prestige(){
-  if(laskuri>=1000000000*prestigetimes){
-    laskuri = 0
+  if(laskin>=1000000000*prestigetimes){
+    laskin = 0
     brsec = 0
     asia1hin = 10
     asia2hin = 100
@@ -379,7 +379,7 @@ function prestige(){
     asia9.innerHTML =""+ asia9hin
     asia10.innerHTML =""+ asia10hin
     asia11.innerHTML =""+ asia11hin
-    localStorage.setItem('laskuri', laskuri);
+    localStorage.setItem('laskin', laskin);
     localStorage.setItem('brsec', brsec);
     localStorage.setItem('asia1hin', asia1hin);
     localStorage.setItem('asia2hin', asia2hin);
