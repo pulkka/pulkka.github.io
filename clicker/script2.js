@@ -46,7 +46,7 @@ var isxmas = 0
 var ishat = 0
 var issmile = 0
 var isweird = 0
-
+coolbackground()
 var prestigetimes = parseInt(window.localStorage.getItem('prestigetimes') || "1");
 vaihdavari()
 asia1.innerHTML =""+ asia1hin
@@ -401,4 +401,7 @@ function prestige(){
     alert("u dont have 1000000000 burgers ):")
   }
   
+}
+function coolbackground(){
+  document.body.classList.toggle("body");
 }
