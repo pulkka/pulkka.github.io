@@ -15,7 +15,7 @@ html{
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    
+    overflow: hidden
     
 }
 
@@ -26,7 +26,7 @@ html{
     width: 200px;
     text-align: center;
 }
-table {
+#shoptable {
     border-radius: 0px;
     border:none;
     width: 500px;
@@ -107,12 +107,19 @@ body{
   height: 200px;
   padding-left: 520px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1111px) {
+  .leaderboard {
+    margin-left: 60% !important;
+  }
+  #vip{
+
+  }
   #shop-controls {
-    z-index: 999;
-    display: block;
-    position: absolute;
-    top: 0;
+        z-index: 999;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 400px;
   }
   #shop {
     width: 380px;
@@ -123,21 +130,17 @@ body{
     margin-left: 0px;
       position: absolute;
       height: 150px;
-      bottom: -13%;
+      bottom: -11%;
       left: 202px;
   }
   #clickme {
     margin-left: calc(50% - 110px);
-  }
-}
-#no{
-  background-color: #ecb709 !important;
 
-}
-#settings{
+  }
+  #settings{
   font-family: "Chewy", system-ui;
   border-radius: 10px;
-  bottom: 178px;
+  bottom: 0px;
   position: absolute;
   margin-left: 45%;
   background-color: rgb(204, 165, 36);
@@ -146,6 +149,52 @@ body{
   display: none;
   border: 2px solid;
 }
+}
+@media only screen and (max-width: 500px) {
+  .leaderboard {
+    margin-left: 30% !important;
+  }
+  #shop-controls {
+        z-index: 999;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 3px;
+  }
+  #shop {
+    width: 380px;
+    overflow-x: hidden;
+    display: none;
+  }
+  #color {
+            margin-left: 0px;
+        position: absolute;
+        height: 150px;
+        bottom: -10%;
+        left: 0px;
+  }
+  #clickme {
+    margin-left: calc(50% - 110px);
+
+  }
+  #settings{
+  font-family: "Chewy", system-ui;
+  border-radius: 10px;
+  bottom: 0px;
+  position: absolute;
+  margin-left: 45%;
+  background-color: rgb(204, 165, 36);
+  border: black 10px;
+  z-index: 101001010101;
+  display: none;
+  border: 2px solid;
+}
+}
+#no{
+  background-color: #ecb709 !important;
+
+}
+
 #brgr:active{
   transform: scale(1.2);
   
@@ -226,4 +275,53 @@ button:hover {
 button:active {
   transform: translate(0.05em, 0.05em) !important;
   box-shadow: 0.05em 0.05em !important;
+}
+.leaderboard{
+  font-family: "Chewy", system-ui;
+  bottom: 150px;
+  position: absolute;
+  margin-left: 70%;
+  background-color: rgb(204, 165, 36);
+  border: black 10px;
+  
+  display: block;
+  border: 2px solid;
+}
+.leaderboard table{
+  background-color: rgb(190, 168, 94);
+  cursor: initial;
+}
+.leaderboard tr,
+.leaderboard td,
+.leaderboard th
+{
+  height: 20px;
+  vertical-align: top;
+}
+#kaikki {
+  display: none;
+}
+#vip {
+    position: absolute;
+    padding-left: 30%;
+    height: 15%;
+    bottom: 749px;
+    display: none;
+}
+#settings{
+  font-family: "Chewy", system-ui;
+  border-radius: 10px;
+  bottom: 120px;
+  position: absolute;
+  margin-left: 45%;
+  background-color: rgb(204, 165, 36);
+  border: black 10px;
+  z-index: 101001010101;
+  display: none;
+  border: 2px solid;}
+#pisteet {
+  width:200px;
+}
+#form {
+  font-family: "Chewy", system-ui;
 }

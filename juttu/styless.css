@@ -1,0 +1,13 @@
+.pisteet {
+    display: none;
+}
+#noppa{
+    display: none;
+    width: 300px;
+    height: 300px;
+    margin-top: calc(25% - 150px);
+    margin-left: calc(50% - 150px);
+}
+#noppa i {
+    font-size: 72px;
+}

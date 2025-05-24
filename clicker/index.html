@@ -18,14 +18,16 @@
 
 </head>
 <body class="body">
+    <div id="kaikki">
+        <img id = "vip" src="vip.png" alt="vip">
     <div id="shop-controls">
         <button  id="show-shop" onclick="toggleShop()">SHOP</button>
     </div>
     <div id="shop" style="height: 100%; ; overflow-y: scroll;">
-        <table>
+        <table id="shoptable">
             <tr>
                 <td  id="no">
-                    <h3>AUTOCLICKERS</h3>
+                    <h3>Kamaa</h3>
                 </td>
             </tr>
             <tr class="shp"id="tuote1"id="border"onclick="buyshop(1)">
@@ -37,7 +39,7 @@
                         <p>Clicker</p>
                         <i id ="asia1">10</i>🍔
                         <p>
-                        Auto Clicks Every 4 Seconds
+                        Klikkaa 4 sekunnin välein
                         </p>
                     </div>
                     
@@ -54,10 +56,10 @@
                         <img src = "cartoon-1299636_1280.png" alt="eror">
                     </div>
                     <div class="shop-price">
-                        <p>A Chef</p>
+                        <p>Kokki</p>
                         <i id ="asia2">100</i>🍔
                         <p>
-                        A Chef Makes Burgers
+                        Leipoo purilaisia
                         </p>
                     </div>
                     
@@ -74,10 +76,10 @@
                         <img src = "restaurant-6281067_1280.png" alt="eror">
                     </div>
                     <div class="shop-price">
-                        <p>A Restaurant</p>
+                        <p>Ravintola</p>
                         <i id ="asia3">500</i>🍔
                         <p>
-                        A Restaurant Makes Burgers
+                        Tekee purilaisia
                         </p>
                     </div>
                     
@@ -94,10 +96,10 @@
                         <img src = "coal-mine-297488_1280.png" alt="eror">
                     </div>
                     <div class="shop-price">
-                        <p>A Burger Mine</p>
+                        <p>Kaivos</p>
                         <i id ="asia4">2000</i>🍔
                         <p>
-                        Burgers Are mined In A Mine :)
+                        Purilaiset kaivetaan kaivoksissa :)
                         </p>
                     </div>
                     
@@ -114,10 +116,10 @@
                         <img src = "factory-6283505_1280.png" alt="eror">
                     </div>
                     <div class="shop-price">
-                        <p>A Factory</p>
+                        <p>Tehdas</p>
                         <i id ="asia5">7000</i>🍔
                         <p>
-                        A Factory Makes A Lot Of Burgers
+                        Tekee paljon purilaisia
                         </p>
                     </div>
                     
@@ -134,10 +136,10 @@
                         <img src = "chemistry-306977_1280.png" alt="eror">
                     </div>
                     <div class="shop-price">
-                        <p>A Lab</p>
+                        <p>Labra</p>
                         <i id ="asia6">25000</i>🍔
                         <p>
-                        This Lab Turns Gold Into Burgers
+                        Muuttaa kultaa purilaisiksi
                         </p>
                     </div>
                     
@@ -154,10 +156,10 @@
                         <img src = "rocket-4857953_1280.png" alt="eror">
                     </div>
                     <div class="shop-price">
-                        <p>A Rocket</p>
+                        <p>Raketti</p>
                         <i id ="asia7">10000000</i>🍔
                         <p>
-                        Transfers Burgers From The Burger Planet
+                        Hakee purilaisia purilais planeetalta
                         </p>
                     </div>
                     
@@ -174,10 +176,10 @@
                         <img src = "portal.png" alt="eror">
                     </div>
                     <div class="shop-price">
-                        <p>A Portal</p>
+                        <p>Portaali</p>
                         <i id ="asia8">1000000</i>🍔
                         <p>
-                        Transfers Burgers From The Burger Land
+                        Hakee purilaisia purilais maasta
                         </p>
                     </div>
                     
@@ -194,10 +196,10 @@
                         <img src = "watch-42803_1280.png" alt="eror">
                     </div>
                     <div class="shop-price">
-                        <p>A Time Machine</p>
+                        <p>Aika kone</p>
                         <i id ="asia9">123456789</i>🍔
                         <p>
-                        Brings Burgers From The Past
+                        Hakee purilaisia menneisyydestä
                         </p>
                     </div>
                     
@@ -210,7 +212,7 @@
             </tr>
             <tr>
                 <td  id="no">
-                    <h3>UPGRADES</h3>
+                    <h3>Päivitykset</h3>
                 </td>
             </tr>
             <tr class="shp"id="tuote10"id="border"onclick="buyshop(10)">
@@ -219,10 +221,10 @@
                         <img src = "golden.png" alt="eror">
                     </div>
                     <div class="shop-price">
-                        <p>OP CURSOR</p>
+                        <p>OP KURSORI</p>
                         <i id ="asia10">10000</i>🍔
                         <p>
-                        You Get More Burgers From Clicking
+                        Saat enemmän klikkaamisesta
                         </p>
                     </div>
                     
@@ -234,10 +236,10 @@
                         <img src = "question.png" alt="eror">
                     </div>
                     <div class="shop-price">
-                        <p>The Holy Thing</p>
+                        <p>juttu</p>
                         <i id ="asia11">50000</i>🍔
                         <p>
-                        Doubles The Amount You Get Automaticly
+                        Tuplaa sen mitä saat automaattisesti
                         </p>
                     </div>
                     
@@ -246,40 +248,53 @@
             
         </table>
     </div>
-    <p>Remember, Cheated Burgers Taste Bad!</p>
+    
     <div id="clickme">
         <i id="borgors">0</i>
         <img draggable="false" id="brgr"onclick="addborgor()"src="burger.png"style="width:200px;height:200px;">
     </div>
     <div id="color">
-        <button onclick="togglesettings()" id="settings-ctrl">settings</button>
+        <button onclick="togglesettings()" id="settings-ctrl">Asetukset</button>
     </div>
     <div id="settings">
-        <label for="vari">Background Color</label>
+        <label for="vari">Taustan väri</label>
         <input id="vari" type="color" value="#b507a8">
         <button   onclick="vaihdavari()">OK</button>
         <br>
         <br>
-        <button onclick="restart()" >Restart</button>
+        <button onclick="restart()" >Aloita alusta</button>
         <br>
         <br>
-        <button  onclick="costume(1)">Xmas Borgor</button>
+        <button  onclick="costume(1)">Joulu borgor</button>
         <br>
         <br>
-        <button  onclick="costume(2)">Hat Borgor</button>
+        <button  onclick="costume(2)">Hattu borgor</button>
         <br>
         <br>
-        <button  onclick="costume(3)">Smiling Borgor</button>
+        <button  onclick="costume(3)">Hymyilevä borgor</button>
         <br>
         <br>
-        <button  onclick="costume(4)">Weird Borgor</button>
+        <button  onclick="costume(4)">Outo borgor</button>
         <br>
         <br>
-        <button  onclick="prestige()">PRESTIGE</button>
+        
+        <button  onclick="coolbackground()">hassunhauskatausta :)</button>
         <br>
         <br>
-        <button  onclick="coolbackground()">Funny Background</button>
+        <button id="leaderboard-ctrl" onclick="showboard()">Pistetaulukko</button>
     </div>
+    <div class="leaderboard" id="leaderboard">
+        <table id="pisteet">
+        </table>
+        
+
+    </div>
+    </div>
+    <form id="form">
+            <label for="name"> <br>NIMEÄ EI VOI VAIHTAA LAITA HYVÄ NIMI</label><br>
+            <input type="text" id="name" name="name" value="" placeholder="Nimi"><br>
+            <input type="submit" value="VALMIS">
+        </form>
 <script src="script2.js"></script>
 
 
