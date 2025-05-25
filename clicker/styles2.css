@@ -152,6 +152,7 @@ body{
 }
 @media only screen and (max-width: 500px) {
   .leaderboard {
+    font-size: 15px;
     bottom: 0px !important;
     margin-left: 40% !important;
     overflow-y: scroll;
@@ -285,7 +286,7 @@ button:active {
   margin-left: 70%;
   background-color: rgb(204, 165, 36);
   border: black 10px;
-  
+  font-size: 30px;
   display: block;
   border: 2px solid;
 }
