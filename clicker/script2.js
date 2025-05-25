@@ -50,6 +50,7 @@ var isxmas = 0
 var ishat = 0
 var issmile = 0
 var isweird = 0
+var vippi = 0
 var kaikki = document.getElementById("kaikki")
 var vip = document.getElementById("vip")
 coolbackground()
@@ -392,7 +393,7 @@ setInterval(function(){
   }
   function drawBoard(results){
     let pisteet = document.getElementById("pisteet")
-    pisteet.innerHTML = '<tr><th>nimi</th> <th>borgorit</th></tr>';
+    pisteet.innerHTML = '<tr><th>nimi</th> <br> <th>borgorit</th></tr>';
     results.forEach(function(result) {
       console.log(result.name + ": " + result.score);
       let tr = document.createElement("tr")
@@ -448,7 +449,7 @@ setInterval(function(){
       showkaikki();
     });
   }
-  var vippi = 0
+  
   if (name == "Eero" || name == "Eeron puhelin" || name == "Eeron chromebook") {
     vippi = 1
   }

@@ -290,7 +290,7 @@ button:active {
   border: 2px solid;
 }
 .leaderboard table{
-  background-color: rgb(190, 168, 94);
+  background-color: rgb(190 168 94);
   cursor: initial;
 }
 .leaderboard tr,
