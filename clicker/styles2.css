@@ -152,6 +152,9 @@ body{
 }
 }
 @media only screen and (max-width: 500px) {
+  #borgors {
+    font-size: 70px;
+  }
   #brsecc{
     padding-left: 120px !important;
   }
@@ -310,7 +313,7 @@ button:active {
 }
 #vip {
     position: absolute;
-    padding-left: 30%;
+    padding-left: 50%;
     height: 15%;
     bottom:90%;
     display: none;
