@@ -112,7 +112,7 @@ body{
     margin-left: 60% !important;
   }
   #vip{
-
+    bottom: 90%;
   }
   #shop-controls {
         z-index: 999;
@@ -130,7 +130,7 @@ body{
     margin-left: 0px;
       position: absolute;
       height: 150px;
-      bottom: -11%;
+      bottom: 0px !important;
       left: 202px;
   }
   #clickme {
@@ -140,7 +140,7 @@ body{
   #settings{
   font-family: "Chewy", system-ui;
   border-radius: 10px;
-  bottom: 0px;
+  bottom: 0px !important;
   position: absolute;
   margin-left: 45%;
   background-color: rgb(204, 165, 36);
@@ -152,7 +152,9 @@ body{
 }
 @media only screen and (max-width: 500px) {
   .leaderboard {
+    bottom: 0px;
     margin-left: 30% !important;
+    overflow-y: scroll;
   }
   #shop-controls {
         z-index: 999;
@@ -170,7 +172,7 @@ body{
             margin-left: 0px;
         position: absolute;
         height: 150px;
-        bottom: -10%;
+        bottom: 0px !important;
         left: 0px;
   }
   #clickme {
@@ -180,7 +182,7 @@ body{
   #settings{
   font-family: "Chewy", system-ui;
   border-radius: 10px;
-  bottom: 0px;
+  bottom: 0px !important;
   position: absolute;
   margin-left: 45%;
   background-color: rgb(204, 165, 36);
@@ -305,13 +307,13 @@ button:active {
     position: absolute;
     padding-left: 30%;
     height: 15%;
-    bottom: 749px;
+    bottom:90%;
     display: none;
 }
 #settings{
   font-family: "Chewy", system-ui;
   border-radius: 10px;
-  bottom: 120px;
+  bottom: 0px;
   position: absolute;
   margin-left: 45%;
   background-color: rgb(204, 165, 36);
@@ -324,4 +326,10 @@ button:active {
 }
 #form {
   font-family: "Chewy", system-ui;
+}
+@media only screen and (max-width: 1610px) {
+    #vip{
+      padding-left: 40%;
+    }
+
 }

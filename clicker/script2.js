@@ -449,7 +449,7 @@ setInterval(function(){
     });
   }
   var vippi = 0
-  if (name == "Eero") {
+  if (name == "Eero" || name == "Eeron puhelin" || name == "Eeron chromebook") {
     vippi = 1
   }
   if (vippi == 1) {
