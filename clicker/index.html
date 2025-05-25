@@ -7,299 +7,343 @@
 <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Chewy&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <html>
-    
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>HAMBORGOR clicker</title>
     <link rel="icon"
     href="BORGOR.png">
-
-
-
+    
+    
+    
 </head>
 <body class="body">
     <div id="kaikki">
         <p id="brsecc">lataa...</p>
         <img id = "vip" src="vip.png" alt="vip">
-    <div id="shop-controls">
-        <button  id="show-shop" onclick="toggleShop()">SHOP</button>
-    </div>
-    <div id="shop" style="height: 100%; ; overflow-y: scroll;">
-        <table id="shoptable">
-            <tr>
-                <td  id="no">
-                    <h3>Kamaa</h3>
-                </td>
-            </tr>
-            <tr class="shp"id="tuote1"id="border"onclick="buyshop(1)">
-                <td>
-                    <div class="shop-img">
-                        <img src = "cursor.png" alt="eror">
-                    </div>
-                    <div class="shop-price">
-                        <p>Clicker</p>
-                        <i id ="asia1">10</i>🍔
-                        <p>
-                        Klikkaa 4 sekunnin välein
-                        </p>
-                    </div>
-                    
-                    
-                    
-
-
-
-                </td>
-            </tr>
-            <tr class="shp"id="tuote2"id="border"onclick="buyshop(2)">
-                <td>
-                    <div class="shop-img">
-                        <img src = "cartoon-1299636_1280.png" alt="eror">
-                    </div>
-                    <div class="shop-price">
-                        <p>Kokki</p>
-                        <i id ="asia2">100</i>🍔
-                        <p>
-                        Leipoo purilaisia
-                        </p>
-                    </div>
-                    
-                    
-                    
-
-
-
-                </td>
-            </tr>
-            <tr class="shp"id="tuote3"id="border"onclick="buyshop(3)">
-                <td>
-                    <div class="shop-img">
-                        <img src = "restaurant-6281067_1280.png" alt="eror">
-                    </div>
-                    <div class="shop-price">
-                        <p>Ravintola</p>
-                        <i id ="asia3">500</i>🍔
-                        <p>
-                        Tekee purilaisia
-                        </p>
-                    </div>
-                    
-                    
-                    
-
-
-
-                </td>
-            </tr>
-            <tr class="shp"id="tuote4"id="border"onclick="buyshop(4)">
-                <td>
-                    <div class="shop-img">
-                        <img src = "coal-mine-297488_1280.png" alt="eror">
-                    </div>
-                    <div class="shop-price">
-                        <p>Kaivos</p>
-                        <i id ="asia4">2000</i>🍔
-                        <p>
-                        Purilaiset kaivetaan kaivoksissa :)
-                        </p>
-                    </div>
-                    
-                    
-                    
-
-
-
-                </td>
-            </tr>
-            <tr class="shp"id="tuote5"id="border"onclick="buyshop(5)">
-                <td>
-                    <div class="shop-img">
-                        <img src = "factory-6283505_1280.png" alt="eror">
-                    </div>
-                    <div class="shop-price">
-                        <p>Tehdas</p>
-                        <i id ="asia5">7000</i>🍔
-                        <p>
-                        Tekee paljon purilaisia
-                        </p>
-                    </div>
-                    
-                    
-                    
-
-
-
-                </td>
-            </tr>
-            <tr class="shp"id="tuote6"id="border"onclick="buyshop(6)">
-                <td>
-                    <div class="shop-img">
-                        <img src = "chemistry-306977_1280.png" alt="eror">
-                    </div>
-                    <div class="shop-price">
-                        <p>Labra</p>
-                        <i id ="asia6">25000</i>🍔
-                        <p>
-                        Muuttaa kultaa purilaisiksi
-                        </p>
-                    </div>
-                    
-                    
-                    
-
-
-
-                </td>
-            </tr>
-            <tr class="shp"id="tuote7"id="border"onclick="buyshop(7)">
-                <td>
-                    <div class="shop-img">
-                        <img src = "rocket-4857953_1280.png" alt="eror">
-                    </div>
-                    <div class="shop-price">
-                        <p>Raketti</p>
-                        <i id ="asia7">10000000</i>🍔
-                        <p>
-                        Hakee purilaisia purilais planeetalta
-                        </p>
-                    </div>
-                    
-                    
-                    
-
-
-
-                </td>
-            </tr>
-            <tr class="shp"id="tuote8"id="border"onclick="buyshop(8)">
-                <td>
-                    <div class="shop-img">
-                        <img src = "portal.png" alt="eror">
-                    </div>
-                    <div class="shop-price">
-                        <p>Portaali</p>
-                        <i id ="asia8">1000000</i>🍔
-                        <p>
-                        Hakee purilaisia purilais maasta
-                        </p>
-                    </div>
-                    
-                    
-                    
-
-
-
-                </td>
-            </tr>
-            <tr class="shp"id="tuote9"id="border"onclick="buyshop(9)">
-                <td>
-                    <div class="shop-img">
-                        <img src = "watch-42803_1280.png" alt="eror">
-                    </div>
-                    <div class="shop-price">
-                        <p>Aika kone</p>
-                        <i id ="asia9">123456789</i>🍔
-                        <p>
-                        Hakee purilaisia menneisyydestä
-                        </p>
-                    </div>
-                    
-                    
-                    
-
-
-
-                </td>
-            </tr>
-            <tr>
-                <td  id="no">
-                    <h3>Päivitykset</h3>
-                </td>
-            </tr>
-            <tr class="shp"id="tuote10"id="border"onclick="buyshop(10)">
-                <td>
-                    <div class="shop-img">
-                        <img src = "golden.png" alt="eror">
-                    </div>
-                    <div class="shop-price">
-                        <p>OP KURSORI</p>
-                        <i id ="asia10">10000</i>🍔
-                        <p>
-                        Saat enemmän klikkaamisesta
-                        </p>
-                    </div>
-                    
-                </td>
-            </tr>
-            <tr class="shp"id="tuote11"id="border"onclick="buyshop(11)">
-                <td>
-                    <div class="shop-img">
-                        <img src = "question.png" alt="eror">
-                    </div>
-                    <div class="shop-price">
-                        <p>juttu</p>
-                        <i id ="asia11">50000</i>🍔
-                        <p>
-                        Tuplaa sen mitä saat automaattisesti
-                        </p>
-                    </div>
-                    
-                </td>
-            </tr>
+        <div id="shop-controls">
+            <button  id="show-shop" onclick="toggleShop()">SHOP</button>
+        </div>
+        <div id="shop" style="height: 100%; ; overflow-y: scroll;">
+            <table id="shoptable">
+                <tr>
+                    <td  id="no">
+                        <h3>Kamaa</h3>
+                    </td>
+                </tr>
+                <tr class="shp"id="tuote1"id="border"onclick="buyshop(1)">
+                    <td>
+                        <div class="shop-img">
+                            <img src = "cursor.png" alt="eror">
+                        </div>
+                        <div class="shop-price">
+                            <p>Clicker</p>
+                            <i id ="asia1">10</i>🍔
+                            <p>
+                                Klikkaa 4 sekunnin välein
+                            </p>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </td>
+                </tr>
+                <tr class="shp"id="tuote2"id="border"onclick="buyshop(2)">
+                    <td>
+                        <div class="shop-img">
+                            <img src = "cartoon-1299636_1280.png" alt="eror">
+                        </div>
+                        <div class="shop-price">
+                            <p>Kokki</p>
+                            <i id ="asia2">100</i>🍔
+                            <p>
+                                Leipoo purilaisia
+                            </p>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </td>
+                </tr>
+                <tr class="shp"id="tuote3"id="border"onclick="buyshop(3)">
+                    <td>
+                        <div class="shop-img">
+                            <img src = "restaurant-6281067_1280.png" alt="eror">
+                        </div>
+                        <div class="shop-price">
+                            <p>Ravintola</p>
+                            <i id ="asia3">500</i>🍔
+                            <p>
+                                Tekee purilaisia
+                            </p>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </td>
+                </tr>
+                <tr class="shp"id="tuote4"id="border"onclick="buyshop(4)">
+                    <td>
+                        <div class="shop-img">
+                            <img src = "coal-mine-297488_1280.png" alt="eror">
+                        </div>
+                        <div class="shop-price">
+                            <p>Kaivos</p>
+                            <i id ="asia4">2000</i>🍔
+                            <p>
+                                Purilaiset kaivetaan kaivoksissa :)
+                            </p>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </td>
+                </tr>
+                <tr class="shp"id="tuote5"id="border"onclick="buyshop(5)">
+                    <td>
+                        <div class="shop-img">
+                            <img src = "factory-6283505_1280.png" alt="eror">
+                        </div>
+                        <div class="shop-price">
+                            <p>Tehdas</p>
+                            <i id ="asia5">7000</i>🍔
+                            <p>
+                                Tekee paljon purilaisia
+                            </p>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </td>
+                </tr>
+                <tr class="shp"id="tuote6"id="border"onclick="buyshop(6)">
+                    <td>
+                        <div class="shop-img">
+                            <img src = "chemistry-306977_1280.png" alt="eror">
+                        </div>
+                        <div class="shop-price">
+                            <p>Labra</p>
+                            <i id ="asia6">25000</i>🍔
+                            <p>
+                                Muuttaa kultaa purilaisiksi
+                            </p>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </td>
+                </tr>
+                <tr class="shp"id="tuote7"id="border"onclick="buyshop(7)">
+                    <td>
+                        <div class="shop-img">
+                            <img src = "rocket-4857953_1280.png" alt="eror">
+                        </div>
+                        <div class="shop-price">
+                            <p>Raketti</p>
+                            <i id ="asia7">10000000</i>🍔
+                            <p>
+                                Hakee purilaisia purilais planeetalta
+                            </p>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </td>
+                </tr>
+                <tr class="shp"id="tuote8"id="border"onclick="buyshop(8)">
+                    <td>
+                        <div class="shop-img">
+                            <img src = "portal.png" alt="eror">
+                        </div>
+                        <div class="shop-price">
+                            <p>Portaali</p>
+                            <i id ="asia8">1000000</i>🍔
+                            <p>
+                                Hakee purilaisia purilais maasta
+                            </p>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </td>
+                </tr>
+                <tr class="shp"id="tuote9"id="border"onclick="buyshop(9)">
+                    <td>
+                        <div class="shop-img">
+                            <img src = "watch-42803_1280.png" alt="eror">
+                        </div>
+                        <div class="shop-price">
+                            <p>Aika kone</p>
+                            <i id ="asia9">123456789</i>🍔
+                            <p>
+                                Hakee purilaisia menneisyydestä
+                            </p>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td  id="no">
+                        <h3>Päivitykset</h3>
+                    </td>
+                </tr>
+                <tr class="shp"id="tuote10"id="border"onclick="buyshop(10)">
+                    <td>
+                        <div class="shop-img">
+                            <img src = "kursori.png" alt="eror">
+                        </div>
+                        <div class="shop-price">
+                            <p>Kursori</p>
+                            <i id ="asia10">100</i>🍔
+                            <p>
+                                +1 per klikki
+                            </p>
+                        </div>
+                        
+                    </td>
+                </tr>
+                <tr class="shp"id="tuote12"id="border"onclick="buyshop(12)">
+                    <td>
+                        <div class="shop-img">
+                            <img src = "Monokkeli cursor.png" alt="eror">
+                        </div>
+                        <div class="shop-price">
+                            <p>Herra kursori</p>
+                            <i id ="asia12">1000</i>🍔
+                            <p>
+                                +10 per klikki
+                            </p>
+                        </div>
+                        
+                    </td>
+                </tr>
+                <tr class="shp"id="tuote13"id="border"onclick="buyshop(13)">
+                    <td>
+                        <div class="shop-img">
+                            <img src = "president cursor.png" alt="eror">
+                        </div>
+                        <div class="shop-price">
+                            <p>Presidentti kursori</p>
+                            <i id ="asia13">5000</i>🍔
+                            <p>
+                                +20 per klikki
+                            </p>
+                        </div>
+                        
+                    </td>
+                </tr>
+                <tr class="shp"id="tuote14"id="border"onclick="buyshop(14)">
+                    <td>
+                        <div class="shop-img">
+                            <img src = "king cursor_prev_ui.png" alt="eror">
+                        </div>
+                        <div class="shop-price">
+                            <p>Kuningas kursori</p>
+                            <i id ="asia14">20000</i>🍔
+                            <p>
+                                +100 per klikki
+                            </p>
+                        </div>
+                        
+                    </td>
+                </tr>
+                <tr class="shp"id="tuote11"id="border"onclick="buyshop(11)">
+                    <td>
+                        <div class="shop-img">
+                            <img src = "question.png" alt="eror">
+                        </div>
+                        <div class="shop-price">
+                            <p>juttu</p>
+                            <i id ="asia11">50000</i>🍔
+                            <p>
+                                Tuplaa sen mitä saat automaattisesti
+                            </p>
+                        </div>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="clickme">
+            <i id="borgors">0</i>
+            <img draggable="false" id="brgr"onclick="addborgor()"src="burger.png"style="width:200px;height:200px;">
+        </div>
+        <div id="color">
+            <button onclick="togglesettings()" id="settings-ctrl">Asetukset</button>
+        </div>
+        <div id="settings">
+            <label for="vari">Taustan väri</label>
+            <input id="vari" type="color" value="#b507a8">
+            <button   onclick="vaihdavari()">OK</button>
+            <br>
+            <br>
+            <button onclick="restart()" >Aloita alusta</button>
+            <br>
+            <br>
+            <button  onclick="costume(1)">Joulu borgor</button>
+            <br>
+            <br>
+            <button  onclick="costume(2)">Hattu borgor</button>
+            <br>
+            <br>
+            <button  onclick="costume(3)">Hymyilevä borgor</button>
+            <br>
+            <br>
+            <button  onclick="costume(4)">Outo borgor</button>
+            <br>
+            <br>
             
-        </table>
-    </div>
-    
-    <div id="clickme">
-        <i id="borgors">0</i>
-        <img draggable="false" id="brgr"onclick="addborgor()"src="burger.png"style="width:200px;height:200px;">
-    </div>
-    <div id="color">
-        <button onclick="togglesettings()" id="settings-ctrl">Asetukset</button>
-    </div>
-    <div id="settings">
-        <label for="vari">Taustan väri</label>
-        <input id="vari" type="color" value="#b507a8">
-        <button   onclick="vaihdavari()">OK</button>
-        <br>
-        <br>
-        <button onclick="restart()" >Aloita alusta</button>
-        <br>
-        <br>
-        <button  onclick="costume(1)">Joulu borgor</button>
-        <br>
-        <br>
-        <button  onclick="costume(2)">Hattu borgor</button>
-        <br>
-        <br>
-        <button  onclick="costume(3)">Hymyilevä borgor</button>
-        <br>
-        <br>
-        <button  onclick="costume(4)">Outo borgor</button>
-        <br>
-        <br>
+            <button  onclick="coolbackground()">hassunhauskatausta :)</button>
+            <br>
+            <br>
+            <button id="leaderboard-ctrl" onclick="showboard()">Pistetaulukko</button>
+        </div>
         
-        <button  onclick="coolbackground()">hassunhauskatausta :)</button>
-        <br>
-        <br>
-        <button id="leaderboard-ctrl" onclick="showboard()">Pistetaulukko</button>
-    </div>
-    
-    <div class="leaderboard" id="leaderboard">
-        <table id="pisteet">
-        </table>
-        
-
-    </div>
+        <div class="leaderboard" id="leaderboard">
+            <table id="pisteet">
+            </table>
+            
+            
+        </div>
     </div>
     <form id="form">
-            <label for="name"> <br>NIMEÄ EI VOI VAIHTAA LAITA HYVÄ NIMI</label><br>
-            <input type="text" id="name" name="name" value="" placeholder="Nimi"><br>
-            <input type="submit" value="VALMIS">
-        </form>
-<script src="script2.js"></script>
-
-
+        <label for="name"> <br>NIMEÄ EI VOI VAIHTAA LAITA HYVÄ NIMI</label><br>
+        <input type="text" id="name" name="name" value="" placeholder="Nimi"><br>
+        <input type="submit" value="VALMIS">
+    </form>
+    <script src="script2.js"></script>
+    
+    
 </body>
 
 

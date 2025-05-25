@@ -54,7 +54,7 @@ html{
   }
 #brgr {
     cursor: pointer;
-    transition: .0.5s;
+    transition: 0.05s;
 }
 .shp td:hover{
   background-color: #bdbcbc;
@@ -152,6 +152,9 @@ body{
 }
 }
 @media only screen and (max-width: 500px) {
+  #vip {
+    padding-left: 80% !important;
+  }
   #borgors {
     font-size: 70px;
   }
@@ -205,7 +208,7 @@ body{
 
 }
 
-#brgr:active{
+#brgr :active{
   transform: scale(1.2);
   
 
@@ -334,12 +337,6 @@ button:active {
 }
 #form {
   font-family: "Chewy", system-ui;
-}
-@media only screen and (max-width: 1610px) {
-    #vip{
-      padding-left: 40%;
-    }
-
 }
 #brsecc{
   top: 0px;

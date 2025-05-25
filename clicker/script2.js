@@ -21,6 +21,7 @@ var asia8 = document.getElementById("asia8")
 var asia9 = document.getElementById("asia9")
 var asia10 = document.getElementById("asia10")
 var asia11 = document.getElementById("asia11")
+var asia12 = document.getElementById("asia12")
 var shop = document.getElementById("shop")
 var showshop = document.getElementById("show-shop")
 var settings = document.getElementById("settings")
@@ -28,6 +29,8 @@ var settingsctrl = document.getElementById("settings-ctrl")
 var leaderboardctrl = document.getElementById("leaderboard-ctrl")
 var leaderboard = document.getElementById("leaderboard")
 var levelcount = 50
+var vari = document.getElementById("vari")
+var valittuvari = window.localStorage.getItem('valittuvari') || "#b507a8";
 let name = window.localStorage.getItem('name') || "";
 let playerId = window.localStorage.getItem('playerId') || crypto.randomUUID();
 var brsec = parseInt(window.localStorage.getItem('brsec') || "0");
@@ -45,6 +48,9 @@ var asia8hin = parseInt(window.localStorage.getItem('asia8hin') || "1000000");
 var asia9hin = parseInt(window.localStorage.getItem('asia9hin') || "12345678");
 var asia10hin = parseInt(window.localStorage.getItem('asia10hin') || "100");
 var asia11hin = parseInt(window.localStorage.getItem('asia11hin') || "50000");
+var asia12hin = parseInt(window.localStorage.getItem('asia12hin') || "1000");
+var asia13hin = parseInt(window.localStorage.getItem('asia13hin') || "10000");
+var asia14hin = parseInt(window.localStorage.getItem('asia14hin') || "100000");
 var munch = new Audio('munch.mp3')
 var brgr = document.getElementById("brgr");
 var isxmas = 0
@@ -56,8 +62,15 @@ var kaikki = document.getElementById("kaikki")
 var vip = document.getElementById("vip")
 coolbackground()
 var prestigetimes = parseInt(window.localStorage.getItem('prestigetimes') || "1");
-vaihdavari()
+function vaihdavari() {
+  
+  console.log(vari.value)
+  document.body.style.backgroundColor=vari.value
+  localStorage.setItem('valittuvari', vari.value);
 
+}
+vari.value=valittuvari
+vaihdavari()
 var juttu2 = parseInt(window.localStorage.getItem('juttu2') || "0");
 
 
@@ -72,7 +85,9 @@ asia8.innerHTML =""+ asia8hin
 asia9.innerHTML =""+ asia9hin
 asia10.innerHTML =""+ asia10hin
 asia11.innerHTML =""+ asia11hin
-
+asia12.innerHTML =""+ asia12hin
+asia13.innerHTML =""+ asia13hin
+asia14.innerHTML =""+ asia14hin
 setInterval(function(){
   laskin = laskin + brsec/400
   borgors.innerHTML=(Math.round(laskin))
@@ -135,6 +150,21 @@ setInterval(function(){
     tuote11.style.backgroundColor="#c5b9a5"
   }else{
     tuote11.style.backgroundColor="#ffd283"
+  }
+  if (laskin<asia12hin){
+    tuote12.style.backgroundColor="#c5b9a5"
+  }else{
+    tuote12.style.backgroundColor="#ffd283"
+  }
+  if (laskin<asia13hin){
+    tuote13.style.backgroundColor="#c5b9a5"
+  }else{
+    tuote13.style.backgroundColor="#ffd283"
+  }
+  if (laskin<asia14hin){
+    tuote14.style.backgroundColor="#c5b9a5"
+  }else{
+    tuote14.style.backgroundColor="#ffd283"
   }
   
 },100)
@@ -257,8 +287,41 @@ function buyshop(lol){
     if (laskin >= asia11hin){
       brsec = brsec * 2
       laskin=laskin-asia11hin
-      asia11hin = (Math.round(asia11hin * 112))
+      asia11hin = (Math.round(asia11hin * 122))
       asia11.innerHTML=""+asia11hin   
+      borgors.innerHTML=(Math.round(laskin))
+      
+      
+    }
+  }
+  if (lol == 12){
+    if (laskin >= asia12hin){
+      click = click + 10
+      laskin=laskin-asia12hin
+      asia12hin = (Math.round(asia12hin * 1.5))
+      asia12.innerHTML=""+asia12hin   
+      borgors.innerHTML=(Math.round(laskin))
+      
+      
+    }
+  }
+  if (lol == 13){
+    if (laskin >= asia13hin){
+      click = click + 20
+      laskin=laskin-asia13hin
+      asia13hin = (Math.round(asia13hin * 1.5))
+      asia13.innerHTML=""+asia13hin   
+      borgors.innerHTML=(Math.round(laskin))
+      
+      
+    }
+  }
+  if (lol == 14){
+    if (laskin >= asia14hin){
+      click = click + 100
+      laskin=laskin-asia14hin
+      asia14hin = (Math.round(asia14hin * 1.5))
+      asia14.innerHTML=""+asia14hin   
       borgors.innerHTML=(Math.round(laskin))
       
       
@@ -267,11 +330,7 @@ function buyshop(lol){
 }
 
 
-function vaihdavari() {
-  var vari = document.getElementById("vari")
-  console.log(vari.value)
-  document.body.style.backgroundColor=vari.value
-}
+
 
 let saving = false;
 setInterval(function(){
@@ -288,6 +347,9 @@ setInterval(function(){
   localStorage.setItem('asia9hin', asia9hin);
   localStorage.setItem('asia10hin', asia10hin);
   localStorage.setItem('asia11hin', asia11hin);
+  localStorage.setItem('asia12hin', asia12hin);
+  localStorage.setItem('asia13hin', asia13hin);
+  localStorage.setItem('asia14hin', asia4hin);
   localStorage.setItem('prestigee', prestigee);
   localStorage.setItem('prestigetimes', prestigetimes);
   localStorage.setItem('click', click);
@@ -457,7 +519,7 @@ setInterval(function(){
     });
   }
   
-  if (name == "Eero" || name == "Eeron puhelin" || name == "Eeron chromebook") {
+  if (name == "Eero" || name == "Eeron puhelin" || name == "Eeron chromebook" || name == "Tuttuujuu") {
     vippi = 1
   }
   if (vippi == 1) {
