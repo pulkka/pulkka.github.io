@@ -1,4 +1,5 @@
 var borgors = document.getElementById("borgors")
+var brsecc = document.getElementById("brsecc")
 var tuote1 = document.getElementById("tuote1")
 var tuote2 = document.getElementById("tuote2")
 var tuote3 = document.getElementById("tuote3")
@@ -287,6 +288,7 @@ setInterval(function(){
   localStorage.setItem('prestigetimes', prestigetimes);
   localStorage.setItem('click', click);
   localStorage.setItem('vari', vari);
+  brsecc.innerHTML="burgereita sekunnis: " + brsec / 4
   if (!saving) {
     saving = true;
     if (name && name !== "") {
