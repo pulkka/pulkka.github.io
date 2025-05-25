@@ -552,5 +552,10 @@ if (juttu3 == 0) {
   localStorage.setItem('asia13hin', asia13hin);
   localStorage.setItem('asia14hin', asia14hin);
   localStorage.setItem('juttu3', juttu3);
+  asia10.innerHTML =""+ asia10hin
+  asia11.innerHTML =""+ asia11hin
+  asia12.innerHTML =""+ asia12hin
+  asia13.innerHTML =""+ asia13hin
+  asia14.innerHTML =""+ asia14hin
 }
   
