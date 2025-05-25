@@ -43,7 +43,7 @@ var asia6hin = parseInt(window.localStorage.getItem('asia6hin') || "25000");
 var asia7hin = parseInt(window.localStorage.getItem('asia7hin') || "100000");
 var asia8hin = parseInt(window.localStorage.getItem('asia8hin') || "1000000");
 var asia9hin = parseInt(window.localStorage.getItem('asia9hin') || "12345678");
-var asia10hin = parseInt(window.localStorage.getItem('asia10hin') || "10000");
+var asia10hin = parseInt(window.localStorage.getItem('asia10hin') || "100");
 var asia11hin = parseInt(window.localStorage.getItem('asia11hin') || "50000");
 var munch = new Audio('munch.mp3')
 var brgr = document.getElementById("brgr");
@@ -57,6 +57,10 @@ var vip = document.getElementById("vip")
 coolbackground()
 var prestigetimes = parseInt(window.localStorage.getItem('prestigetimes') || "1");
 vaihdavari()
+
+var juttu2 = parseInt(window.localStorage.getItem('juttu2') || "0");
+
+
 asia1.innerHTML =""+ asia1hin
 asia2.innerHTML =""+ asia2hin
 asia3.innerHTML =""+ asia3hin
@@ -240,9 +244,9 @@ function buyshop(lol){
   }
   if (lol == 10){
     if (laskin >= asia10hin){
-      click = click * 10*prestigee
+      click = click + 1 
       laskin=laskin-asia10hin
-      asia10hin = (Math.round(asia10hin * 100.2))
+      asia10hin = (Math.round(asia10hin * 1.5))
       asia10.innerHTML=""+asia10hin   
       borgors.innerHTML=(Math.round(laskin))
       
@@ -385,6 +389,7 @@ setInterval(function(){
     localStorage.clear();
     localStorage.setItem('name', name);
     localStorage.setItem('playerId', playerId);
+    localStorage.setItem('juttu2', ""+juttu2);
     location.reload()
   }
   
@@ -471,3 +476,11 @@ setInterval(function(){
     console.log(body);
 })();
   }
+  
+if (juttu2 == 0) {
+  juttu2 = 1
+  
+  
+  restart()
+}
+  
