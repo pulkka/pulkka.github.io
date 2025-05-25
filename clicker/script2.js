@@ -71,7 +71,7 @@ function vaihdavari() {
 }
 vari.value=valittuvari
 vaihdavari()
-var juttu2 = parseInt(window.localStorage.getItem('juttu2') || "0");
+var juttu3 = parseInt(window.localStorage.getItem('juttu3') || "0");
 
 
 asia1.innerHTML =""+ asia1hin
@@ -276,7 +276,7 @@ function buyshop(lol){
     if (laskin >= asia10hin){
       click = click + 1 
       laskin=laskin-asia10hin
-      asia10hin = (Math.round(asia10hin * 1.5))
+      asia10hin = (Math.round(asia10hin * 2.0))
       asia10.innerHTML=""+asia10hin   
       borgors.innerHTML=(Math.round(laskin))
       
@@ -298,7 +298,7 @@ function buyshop(lol){
     if (laskin >= asia12hin){
       click = click + 10
       laskin=laskin-asia12hin
-      asia12hin = (Math.round(asia12hin * 1.5))
+      asia12hin = (Math.round(asia12hin * 2.0))
       asia12.innerHTML=""+asia12hin   
       borgors.innerHTML=(Math.round(laskin))
       
@@ -309,7 +309,7 @@ function buyshop(lol){
     if (laskin >= asia13hin){
       click = click + 20
       laskin=laskin-asia13hin
-      asia13hin = (Math.round(asia13hin * 1.5))
+      asia13hin = (Math.round(asia13hin * 2.0))
       asia13.innerHTML=""+asia13hin   
       borgors.innerHTML=(Math.round(laskin))
       
@@ -320,7 +320,7 @@ function buyshop(lol){
     if (laskin >= asia14hin){
       click = click + 100
       laskin=laskin-asia14hin
-      asia14hin = (Math.round(asia14hin * 1.5))
+      asia14hin = (Math.round(asia14hin * 2.0))
       asia14.innerHTML=""+asia14hin   
       borgors.innerHTML=(Math.round(laskin))
       
@@ -349,7 +349,7 @@ setInterval(function(){
   localStorage.setItem('asia11hin', asia11hin);
   localStorage.setItem('asia12hin', asia12hin);
   localStorage.setItem('asia13hin', asia13hin);
-  localStorage.setItem('asia14hin', asia4hin);
+  localStorage.setItem('asia14hin', asia14hin);
   localStorage.setItem('prestigee', prestigee);
   localStorage.setItem('prestigetimes', prestigetimes);
   localStorage.setItem('click', click);
@@ -539,10 +539,18 @@ setInterval(function(){
 })();
   }
   
-if (juttu2 == 0) {
-  juttu2 = 1
-  
-  
-  restart()
+if (juttu3 == 0) {
+  juttu3 = 1
+  click = 1
+  asia10hin = 100
+  asia12hin = 1000
+  asia13hin = 10000
+  asia14hin = 100000
+  localStorage.setItem('click', click);
+  localStorage.setItem('asia10hin', asia10hin);
+  localStorage.setItem('asia12hin', asia12hin);
+  localStorage.setItem('asia13hin', asia13hin);
+  localStorage.setItem('asia14hin', asia14hin);
+  localStorage.setItem('juttu3', juttu3);
 }
   
