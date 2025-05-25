@@ -152,8 +152,8 @@ body{
 }
 @media only screen and (max-width: 500px) {
   .leaderboard {
-    bottom: 0px;
-    margin-left: 30% !important;
+    bottom: 0px !important;
+    margin-left: 40% !important;
     overflow-y: scroll;
   }
   #shop-controls {
