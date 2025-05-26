@@ -100,7 +100,7 @@ function vaihdavari() {
 }
 vari.value=valittuvari
 vaihdavari()
-var juttu5 = parseInt(window.localStorage.getItem('juttu5') || "0");
+var juttu6 = parseInt(window.localStorage.getItem('juttu6') || "0");
 
 asia1.innerHTML =""+ asia1hin
 asia2.innerHTML =""+ asia2hin
@@ -395,6 +395,10 @@ function buyshop(lol){
 
 let saving = false;
 setInterval(function(){
+  if (vip == 1){
+    
+  }
+  
   localStorage.setItem('laskin', laskin);
   localStorage.setItem('brsec', brsec);
   localStorage.setItem('asia1hin', asia1hin);
@@ -595,11 +599,12 @@ setInterval(function(){
     });
   }
   
-  if (name == "Eero" || name == "Eeron puhelin" || name == "Eeron chromebook" || name == "Tuttuujuu") {
+  if (name == "Eero" || name == "Eeron puhelin" || name == "Eeron chromebook" || name == "Tuttuujuu" || name == "Laama") {
     vippi = 1
   }
   if (vippi == 1) {
-    vip.style.display="block"
+    vip.style.display="block" 
+    
   }
   updateBoard()
   function deletename(playername){
@@ -615,8 +620,8 @@ setInterval(function(){
 })();
   }
   
-if (juttu5 == 0) {
-  juttu5 = 1
+if (juttu6 == 0) {
+  juttu6 = 1
   restart()
 }
   
