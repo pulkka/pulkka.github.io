@@ -80,7 +80,7 @@ var asia11ostettu = parseInt(window.localStorage.getItem('asia11ostettu') || "0"
 var asia12ostettu = parseInt(window.localStorage.getItem('asia12ostettu') || "0");
 var asia13ostettu = parseInt(window.localStorage.getItem('asia13ostettu') || "0");
 var asia14ostettu = parseInt(window.localStorage.getItem('asia14ostettu') || "0");
-var munch = new Audio('munchhmp3')
+var munch = new Audio('munchh.mp3')
 var brgr = document.getElementById("brgr");
 var isxmas = 0
 var ishat = 0
@@ -411,20 +411,20 @@ setInterval(function(){
   localStorage.setItem('asia12hin', asia12hin);
   localStorage.setItem('asia13hin', asia13hin);
   localStorage.setItem('asia14hin', asia14hin);
-   asia1ostettu.setItem('asia1ostettu',asia1ostettu)
-  asia2ostettu.setItem('asia2ostettu',asia2ostettu)
-  asia3ostettu.setItem('asia3ostettu',asia3ostettu)
-  asia4ostettu.setItem('asia4ostettu',asia4ostettu)
-  asia5ostettu.setItem('asia5ostettu',asia5ostettu)
-  asia6ostettu.setItem('asia6ostettu',asia6ostettu)
-  asia7ostettu.setItem('asia7ostettu',asia7ostettu)
-  asia8ostettu.setItem('asia8ostettu',asia8ostettu)
-  asia9ostettu.setItem('asia9ostettu',asia9ostettu)
-  asia10ostettu.setItem('asia10ostettu',asia10ostettu)
-  asia11ostettu.setItem('asia11ostettu',asia11ostettu)
-  asia12ostettu.setItem('asia12ostettu',asia12ostettu)
-  asia13ostettu.setItem('asia13ostettu',asia13ostettu)
-  asia14ostettu.setItem('asia14ostettu',asia14ost3ettu)
+  localStorage.setItem('asia1ostettu',asia1ostettu)
+  localStorage.setItem('asia2ostettu',asia2ostettu)
+  localStorage.setItem('asia3ostettu',asia3ostettu)
+  localStorage.setItem('asia4ostettu',asia4ostettu)
+  localStorage.setItem('asia5ostettu',asia5ostettu)
+  localStorage.setItem('asia6ostettu',asia6ostettu)
+  localStorage.setItem('asia7ostettu',asia7ostettu)
+  localStorage.setItem('asia8ostettu',asia8ostettu)
+  localStorage.setItem('asia9ostettu',asia9ostettu)
+  localStorage.setItem('asia10ostettu',asia10ostettu)
+  localStorage.setItem('asia11ostettu',asia11ostettu)
+  localStorage.setItem('asia12ostettu',asia12ostettu)
+  localStorage.setItem('asia13ostettu',asia13ostettu)
+  localStorage.setItem('asia14ostettu',asia14ostettu)
   localStorage.setItem('prestigee', prestigee);
   localStorage.setItem('prestigetimes', prestigetimes);
   localStorage.setItem('click', click);
