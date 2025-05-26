@@ -109,18 +109,19 @@ body{
 }
 @media only screen and (max-width: 1111px) {
   .leaderboard {
-    margin-left: 60% !important;
-    font-size: 15px !important;
+    margin-left: 79% !important;
+        font-size: 15px !important;
+        bottom: 3px !important;
   }
   #vip{
     bottom: 90%;
   }
   #shop-controls {
-        z-index: 999;
+       z-index: 999;
         display: block;
         position: absolute;
         top: 0;
-        left: 400px;
+        left: 394px;
   }
   #shop {
     width: 380px;
@@ -128,11 +129,11 @@ body{
     display: none;
   }
   #color {
-    margin-left: 0px;
-      position: absolute;
-      height: 150px;
-      bottom: 0px !important;
-      left: 202px;
+            margin-left: 0px;
+        position: absolute;
+        height: 150px;
+        bottom: 547px !important;
+        left: 835px;
   }
   #clickme {
     margin-left: calc(50% - 110px);
@@ -158,10 +159,11 @@ body{
   #borgors {
     font-size: 70px;
   }
-  #brsecc{
+  .jutut {
     padding-left: 120px !important;
   }
   .leaderboard {
+    height:200px;
     font-size: 15px !important;
     bottom: 0px !important;
     margin-left: 40% !important;
@@ -338,8 +340,14 @@ button:active {
 #form {
   font-family: "Chewy", system-ui;
 }
-#brsecc{
+.jutut{
   top: 0px;
   padding-left: 517px;
     font-family: "Chewy", system-ui;
+}
+.effects {
+  font-size: small;
+}
+.shop-price p{
+  margin-bottom: 0px !important;
 }

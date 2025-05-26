@@ -1,5 +1,6 @@
 var borgors = document.getElementById("borgors")
 var brsecc = document.getElementById("brsecc")
+var clickk = document.getElementById("clickk")
 var tuote1 = document.getElementById("tuote1")
 var tuote2 = document.getElementById("tuote2")
 var tuote3 = document.getElementById("tuote3")
@@ -22,6 +23,20 @@ var asia9 = document.getElementById("asia9")
 var asia10 = document.getElementById("asia10")
 var asia11 = document.getElementById("asia11")
 var asia12 = document.getElementById("asia12")
+var omistat1 = document.getElementById("omistat1")
+var omistat2 = document.getElementById("omistat2")
+var omistat3 = document.getElementById("omistat3")
+var omistat4 = document.getElementById("omistat4")
+var omistat5 = document.getElementById("omistat5")
+var omistat6 = document.getElementById("omistat6")
+var omistat7 = document.getElementById("omistat7")
+var omistat8 = document.getElementById("omistat8")
+var omistat9 = document.getElementById("omistat9")
+var omistat10 = document.getElementById("omistat10")
+var omistat11= document.getElementById("omistat11")
+var omistat12 = document.getElementById("omistat12")
+var omistat13 = document.getElementById("omistat13")
+var omistat14 = document.getElementById("omistat14")
 var shop = document.getElementById("shop")
 var showshop = document.getElementById("show-shop")
 var settings = document.getElementById("settings")
@@ -51,7 +66,21 @@ var asia11hin = parseInt(window.localStorage.getItem('asia11hin') || "50000");
 var asia12hin = parseInt(window.localStorage.getItem('asia12hin') || "1000");
 var asia13hin = parseInt(window.localStorage.getItem('asia13hin') || "10000");
 var asia14hin = parseInt(window.localStorage.getItem('asia14hin') || "100000");
-var munch = new Audio('munch.mp3')
+var asia1ostettu = parseInt(window.localStorage.getItem('asia1ostettu') || "0");
+var asia2ostettu = parseInt(window.localStorage.getItem('asia2ostettu') || "0");
+var asia3ostettu = parseInt(window.localStorage.getItem('asia3ostettu') || "0");
+var asia4ostettu = parseInt(window.localStorage.getItem('asia4ostettu') || "0");
+var asia5ostettu = parseInt(window.localStorage.getItem('asia5ostettu') || "0");
+var asia6ostettu = parseInt(window.localStorage.getItem('asia6ostettu') || "0");
+var asia7ostettu = parseInt(window.localStorage.getItem('asia7ostettu') || "0");
+var asia8ostettu = parseInt(window.localStorage.getItem('asia8ostettu') || "0");
+var asia9ostettu = parseInt(window.localStorage.getItem('asia9ostettu') || "0");
+var asia10ostettu = parseInt(window.localStorage.getItem('asia10ostettu') || "0");
+var asia11ostettu = parseInt(window.localStorage.getItem('asia11ostettu') || "0");
+var asia12ostettu = parseInt(window.localStorage.getItem('asia12ostettu') || "0");
+var asia13ostettu = parseInt(window.localStorage.getItem('asia13ostettu') || "0");
+var asia14ostettu = parseInt(window.localStorage.getItem('asia14ostettu') || "0");
+var munch = new Audio('munchhmp3')
 var brgr = document.getElementById("brgr");
 var isxmas = 0
 var ishat = 0
@@ -71,8 +100,7 @@ function vaihdavari() {
 }
 vari.value=valittuvari
 vaihdavari()
-var juttu3 = parseInt(window.localStorage.getItem('juttu3') || "0");
-
+var juttu4 = parseInt(window.localStorage.getItem('juttu4') || "0");
 
 asia1.innerHTML =""+ asia1hin
 asia2.innerHTML =""+ asia2hin
@@ -169,14 +197,21 @@ setInterval(function(){
   
 },100)
 function addborgor(){
+  brgr.style.transform="scale(1.2,1.2)"
   laskin=laskin+click
   borgors.innerHTML=(Math.round(laskin))
+  setTimeout(() => {
+    brgr.style.transform="scale(1,1)"
+  }, 100);
+  
   munch.play()
 }
 function buyshop(lol){
   if(lol==1){
     if (laskin >= asia1hin){
-      brsec = brsec + 1*prestigee
+      asia1ostettu = asia1ostettu + 1
+      omistat1.innerHTML="omistat: " +asia1ostettu 
+      brsec = brsec + 1*prestigee 
       laskin=laskin-asia1hin
       asia1hin = (Math.round(asia1hin * 1.2))
       borgors.innerHTML=(Math.round(laskin))
@@ -186,6 +221,8 @@ function buyshop(lol){
   }
   if (lol == 2){
     if (laskin >= asia2hin){
+      asia2ostettu = asia2ostettu + 1
+      omistat2.innerHTML="omistat: " +asia2ostettu 
       brsec = brsec+4*prestigee
       laskin=laskin-asia2hin
       asia2hin = (Math.round(asia2hin * 1.2))
@@ -197,6 +234,8 @@ function buyshop(lol){
   }
   if (lol == 3){
     if (laskin >= asia3hin){
+      asia3ostettu = asia3ostettu + 1
+      omistat3.innerHTML="omistat: " +asia3ostettu 
       brsec = brsec+10*prestigee
       laskin=laskin-asia3hin
       asia3hin = (Math.round(asia3hin * 1.2))
@@ -208,6 +247,8 @@ function buyshop(lol){
   }
   if (lol == 4){
     if (laskin >= asia4hin){
+      asia4ostettu = asia4ostettu + 1
+      omistat4.innerHTML="omistat: " +asia4ostettu 
       brsec = brsec+20*prestigee
       laskin=laskin-asia4hin
       asia4hin = (Math.round(asia4hin * 1.2))
@@ -219,6 +260,8 @@ function buyshop(lol){
   }
   if (lol == 5){
     if (laskin >= asia5hin){
+      asia5ostettu = asia5ostettu + 1
+      omistat5.innerHTML="omistat: " +asia5ostettu 
       brsec = brsec+60*prestigee
       laskin=laskin-asia5hin
       asia5hin = (Math.round(asia5hin * 1.2))
@@ -230,7 +273,9 @@ function buyshop(lol){
   }
   if (lol == 6){
     if (laskin >= asia6hin){
-      brsec = brsec+100*prestigee
+      asia6ostettu = asia6ostettu + 1
+      omistat6.innerHTML="omistat: " +asia6ostettu 
+      brsec = brsec+150*prestigee
       laskin=laskin-asia6hin
       asia6hin = (Math.round(asia6hin * 1.2))
       asia6.innerHTML=""+asia6hin   
@@ -241,6 +286,8 @@ function buyshop(lol){
   }
   if (lol == 7){
     if (laskin >= asia7hin){
+      asia7ostettu = asia7ostettu + 1
+      omistat7.innerHTML="omistat: " +asia7ostettu 
       brsec = brsec+500*prestigee
       laskin=laskin-asia7hin
       asia7hin = (Math.round(asia7hin * 1.2))
@@ -252,6 +299,8 @@ function buyshop(lol){
   }
   if (lol == 8){
     if (laskin >= asia8hin){
+      asia8ostettu = asia8ostettu + 1
+      omistat8.innerHTML="omistat: " +asia8ostettu 
       brsec = brsec+1000*prestigee
       laskin=laskin-asia8hin
       asia8hin = (Math.round(asia8hin * 1.2))
@@ -263,6 +312,8 @@ function buyshop(lol){
   }
   if (lol == 9){
     if (laskin >= asia9hin){
+      asia9ostettu = asia9ostettu + 1
+      omistat9.innerHTML="omistat: " +asia9ostettu 
       brsec = brsec+10000*prestigee
       laskin=laskin-asia9hin
       asia9hin = (Math.round(asia9hin * 1.2))
@@ -274,6 +325,8 @@ function buyshop(lol){
   }
   if (lol == 10){
     if (laskin >= asia10hin){
+      asia10ostettu = asia10ostettu + 1
+      omistat10.innerHTML="omistat: " +asia10ostettu 
       click = click + 1 
       laskin=laskin-asia10hin
       asia10hin = (Math.round(asia10hin * 2.0))
@@ -285,6 +338,8 @@ function buyshop(lol){
   }
   if (lol == 11){
     if (laskin >= asia11hin){
+      asia11ostettu = asia11ostettu + 1
+      omistat11.innerHTML="omistat: " +asia11ostettu 
       brsec = brsec * 2
       laskin=laskin-asia11hin
       asia11hin = (Math.round(asia11hin * 122))
@@ -296,6 +351,8 @@ function buyshop(lol){
   }
   if (lol == 12){
     if (laskin >= asia12hin){
+      asia12ostettu = asia12ostettu + 1
+      omistat12.innerHTML="omistat: " +asia12ostettu 
       click = click + 10
       laskin=laskin-asia12hin
       asia12hin = (Math.round(asia12hin * 2.0))
@@ -307,6 +364,8 @@ function buyshop(lol){
   }
   if (lol == 13){
     if (laskin >= asia13hin){
+      asia13ostettu = asia13ostettu + 1
+      omistat13.innerHTML="omistat: " +asia13ostettu 
       click = click + 20
       laskin=laskin-asia13hin
       asia13hin = (Math.round(asia13hin * 2.0))
@@ -318,6 +377,8 @@ function buyshop(lol){
   }
   if (lol == 14){
     if (laskin >= asia14hin){
+      asia14ostettu = asia14ostettu + 1
+      omistat14.innerHTML="omistat: " +asia14ostettu 
       click = click + 100
       laskin=laskin-asia14hin
       asia14hin = (Math.round(asia14hin * 2.0))
@@ -355,6 +416,7 @@ setInterval(function(){
   localStorage.setItem('click', click);
   localStorage.setItem('vari', vari);
   brsecc.innerHTML="burgereita sekunnis: " + brsec / 4
+  clickk.innerHTML="burgereita klikkauksesta: " + click
   if (!saving) {
     saving = true;
     if (name && name !== "") {
@@ -451,7 +513,7 @@ setInterval(function(){
     localStorage.clear();
     localStorage.setItem('name', name);
     localStorage.setItem('playerId', playerId);
-    localStorage.setItem('juttu2', ""+juttu2);
+    localStorage.setItem('juttu4', ""+juttu4);
     location.reload()
   }
   
@@ -539,23 +601,8 @@ setInterval(function(){
 })();
   }
   
-if (juttu3 == 0) {
-  juttu3 = 1
-  click = 1
-  asia10hin = 100
-  asia12hin = 1000
-  asia13hin = 10000
-  asia14hin = 100000
-  localStorage.setItem('click', click);
-  localStorage.setItem('asia10hin', asia10hin);
-  localStorage.setItem('asia12hin', asia12hin);
-  localStorage.setItem('asia13hin', asia13hin);
-  localStorage.setItem('asia14hin', asia14hin);
-  localStorage.setItem('juttu3', juttu3);
-  asia10.innerHTML =""+ asia10hin
-  asia11.innerHTML =""+ asia11hin
-  asia12.innerHTML =""+ asia12hin
-  asia13.innerHTML =""+ asia13hin
-  asia14.innerHTML =""+ asia14hin
+if (juttu4 == 0) {
+  juttu4 = 1
+  restart()
 }
   
