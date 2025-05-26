@@ -100,7 +100,7 @@ function vaihdavari() {
 }
 vari.value=valittuvari
 vaihdavari()
-var juttu4 = parseInt(window.localStorage.getItem('juttu4') || "0");
+var juttu5 = parseInt(window.localStorage.getItem('juttu5') || "0");
 
 asia1.innerHTML =""+ asia1hin
 asia2.innerHTML =""+ asia2hin
@@ -236,7 +236,7 @@ function buyshop(lol){
     if (laskin >= asia3hin){
       asia3ostettu = asia3ostettu + 1
       omistat3.innerHTML="omistat: " +asia3ostettu 
-      brsec = brsec+10*prestigee
+      brsec = brsec+20*prestigee
       laskin=laskin-asia3hin
       asia3hin = (Math.round(asia3hin * 1.2))
       asia3.innerHTML=""+asia3hin   
@@ -249,7 +249,7 @@ function buyshop(lol){
     if (laskin >= asia4hin){
       asia4ostettu = asia4ostettu + 1
       omistat4.innerHTML="omistat: " +asia4ostettu 
-      brsec = brsec+20*prestigee
+      brsec = brsec+80*prestigee
       laskin=laskin-asia4hin
       asia4hin = (Math.round(asia4hin * 1.2))
       asia4.innerHTML=""+asia4hin   
@@ -262,7 +262,7 @@ function buyshop(lol){
     if (laskin >= asia5hin){
       asia5ostettu = asia5ostettu + 1
       omistat5.innerHTML="omistat: " +asia5ostettu 
-      brsec = brsec+60*prestigee
+      brsec = brsec+150*prestigee
       laskin=laskin-asia5hin
       asia5hin = (Math.round(asia5hin * 1.2))
       asia5.innerHTML=""+asia5hin   
@@ -275,7 +275,7 @@ function buyshop(lol){
     if (laskin >= asia6hin){
       asia6ostettu = asia6ostettu + 1
       omistat6.innerHTML="omistat: " +asia6ostettu 
-      brsec = brsec+150*prestigee
+      brsec = brsec+300*prestigee
       laskin=laskin-asia6hin
       asia6hin = (Math.round(asia6hin * 1.2))
       asia6.innerHTML=""+asia6hin   
@@ -301,7 +301,7 @@ function buyshop(lol){
     if (laskin >= asia8hin){
       asia8ostettu = asia8ostettu + 1
       omistat8.innerHTML="omistat: " +asia8ostettu 
-      brsec = brsec+1000*prestigee
+      brsec = brsec+1500*prestigee
       laskin=laskin-asia8hin
       asia8hin = (Math.round(asia8hin * 1.2))
       asia8.innerHTML=""+asia8hin   
@@ -411,6 +411,20 @@ setInterval(function(){
   localStorage.setItem('asia12hin', asia12hin);
   localStorage.setItem('asia13hin', asia13hin);
   localStorage.setItem('asia14hin', asia14hin);
+   asia1ostettu.setItem('asia1ostettu',asia1ostettu)
+  asia2ostettu.setItem('asia2ostettu',asia2ostettu)
+  asia3ostettu.setItem('asia3ostettu',asia3ostettu)
+  asia4ostettu.setItem('asia4ostettu',asia4ostettu)
+  asia5ostettu.setItem('asia5ostettu',asia5ostettu)
+  asia6ostettu.setItem('asia6ostettu',asia6ostettu)
+  asia7ostettu.setItem('asia7ostettu',asia7ostettu)
+  asia8ostettu.setItem('asia8ostettu',asia8ostettu)
+  asia9ostettu.setItem('asia9ostettu',asia9ostettu)
+  asia10ostettu.setItem('asia10ostettu',asia10ostettu)
+  asia11ostettu.setItem('asia11ostettu',asia11ostettu)
+  asia12ostettu.setItem('asia12ostettu',asia12ostettu)
+  asia13ostettu.setItem('asia13ostettu',asia13ostettu)
+  asia14ostettu.setItem('asia14ostettu',asia14ost3ettu)
   localStorage.setItem('prestigee', prestigee);
   localStorage.setItem('prestigetimes', prestigetimes);
   localStorage.setItem('click', click);
@@ -513,7 +527,7 @@ setInterval(function(){
     localStorage.clear();
     localStorage.setItem('name', name);
     localStorage.setItem('playerId', playerId);
-    localStorage.setItem('juttu4', ""+juttu4);
+    localStorage.setItem('juttu5', ""+juttu5);
     location.reload()
   }
   
@@ -601,8 +615,8 @@ setInterval(function(){
 })();
   }
   
-if (juttu4 == 0) {
-  juttu4 = 1
+if (juttu5 == 0) {
+  juttu5 = 1
   restart()
 }
   
