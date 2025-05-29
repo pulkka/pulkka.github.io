@@ -135,10 +135,10 @@ asia13.innerHTML =hienonna(asia13hin)
 asia14.innerHTML =hienonna(asia14hin)
 setInterval(function(){
   laskin = laskin + brsec/100
-  borgors.innerHTML=(hienonna(Math.round(laskin)))
+  borgors.innerHTML=(Math.round(laskin))
 },10)
 setInterval(function(){
-  borgors.innerHTML=(hienonna(Math.round(laskin)))
+  borgors.innerHTML=(Math.round(laskin))
   
   
   if (laskin<asia1hin){
@@ -232,7 +232,7 @@ function buyshop(lol){
       laskin=laskin-asia1hin
       asia1hin = (Math.round(asia1hin * 1.2))
       borgors.innerHTML=(hienonna(Math.round(laskin)))
-      asia1.innerHTML=""+asia1hin
+      asia1.innerHTML=""+hienonna(asia1hin)
     }
     
   }
@@ -243,7 +243,7 @@ function buyshop(lol){
       brsec = brsec+1*prestigee
       laskin=laskin-asia2hin
       asia2hin = (Math.round(asia2hin * 1.2))
-      asia2.innerHTML=""+asia2hin
+      asia2.innerHTML=""+hienonna(asia2hin)
       borgors.innerHTML=(hienonna(Math.round(laskin)))
       
       
@@ -256,7 +256,7 @@ function buyshop(lol){
       brsec = brsec+8*prestigee
       laskin=laskin-asia3hin
       asia3hin = (Math.round(asia3hin * 1.2))
-      asia3.innerHTML=""+asia3hin   
+      asia3.innerHTML=""+hienonna(asia3hin)
       borgors.innerHTML=(hienonna(Math.round(laskin)))
       
       
@@ -269,7 +269,7 @@ function buyshop(lol){
       brsec = brsec+50*prestigee
       laskin=laskin-asia4hin
       asia4hin = (Math.round(asia4hin * 1.2))
-      asia4.innerHTML=""+asia4hin   
+      asia4.innerHTML=""+hienonna(asia4hin)
       borgors.innerHTML=(hienonna(Math.round(laskin)))
       
       
@@ -282,7 +282,7 @@ function buyshop(lol){
       brsec = brsec+250*prestigee
       laskin=laskin-asia5hin
       asia5hin = (Math.round(asia5hin * 1.2))
-      asia5.innerHTML=""+asia5hin   
+      asia5.innerHTML=""+hienonna(asia5hin)
       borgors.innerHTML=(hienonna(Math.round(laskin)))
       
       
@@ -295,7 +295,7 @@ function buyshop(lol){
       brsec = brsec+1300*prestigee
       laskin=laskin-asia6hin
       asia6hin = (Math.round(asia6hin * 1.2))
-      asia6.innerHTML=""+asia6hin   
+      asia6.innerHTML=""+hienonna(asia6hin)    
       borgors.innerHTML=(hienonna(Math.round(laskin)))
       
       
@@ -308,7 +308,7 @@ function buyshop(lol){
       brsec = brsec+8000*prestigee
       laskin=laskin-asia7hin
       asia7hin = (Math.round(asia7hin * 1.2))
-      asia7.innerHTML=""+asia7hin   
+      asia7.innerHTML=""+hienonna(asia7hin)
       borgors.innerHTML=(hienonna(Math.round(laskin)))
       
       
@@ -321,7 +321,7 @@ function buyshop(lol){
       brsec = brsec+40000*prestigee
       laskin=laskin-asia8hin
       asia8hin = (Math.round(asia8hin * 1.2))
-      asia8.innerHTML=""+asia8hin   
+      asia8.innerHTML=""+hienonna(asia8hin)
       borgors.innerHTML=(hienonna(Math.round(laskin)))
       
       
@@ -334,7 +334,7 @@ function buyshop(lol){
       brsec = brsec+250000*prestigee
       laskin=laskin-asia9hin
       asia9hin = (Math.round(asia9hin * 1.2))
-      asia9.innerHTML=""+asia9hin   
+      asia9.innerHTML=""+hienonna(asia9hin)
       borgors.innerHTML=(hienonna(Math.round(laskin)))
       
       
@@ -347,7 +347,7 @@ function buyshop(lol){
       click = click + 1 
       laskin=laskin-asia10hin
       asia10hin = (Math.round(asia10hin * 2.5))
-      asia10.innerHTML=""+asia10hin   
+      asia10.innerHTML=""+hienonna(asia10hi) 
       borgors.innerHTML=(hienonna(Math.round(laskin)))
       
       
@@ -360,7 +360,7 @@ function buyshop(lol){
       brsec = brsec * 2
       laskin=laskin-asia11hin
       asia11hin = (Math.round(asia11hin * 122))
-      asia11.innerHTML=""+asia11hin   
+      asia11.innerHTML=""+hienonna(asia11hin)
       borgors.innerHTML=(hienonna(Math.round(laskin)))
       
       
@@ -373,7 +373,7 @@ function buyshop(lol){
       click = click + 5
       laskin=laskin-asia12hin
       asia12hin = (Math.round(asia12hin * 2.5))
-      asia12.innerHTML=""+asia12hin   
+      asia12.innerHTML=""+hienonna(asia12hin)
       borgors.innerHTML=(hienonna(Math.round(laskin)))
       
       
@@ -383,10 +383,10 @@ function buyshop(lol){
     if (laskin >= asia13hin){
       asia13ostettu = asia13ostettu + 1
       omistat13.innerHTML="omistat: " +asia13ostettu 
-      click = click + 20
+      click = click + 15
       laskin=laskin-asia13hin
       asia13hin = (Math.round(asia13hin * 2.5))
-      asia13.innerHTML=""+asia13hin   
+      asia13.innerHTML=""+hienonna(asia13hin)
       borgors.innerHTML=(hienonna(Math.round(laskin)))
       
       
@@ -396,10 +396,10 @@ function buyshop(lol){
     if (laskin >= asia14hin){
       asia14ostettu = asia14ostettu + 1
       omistat14.innerHTML="omistat: " +asia14ostettu 
-      click = click + 100
+      click = click + 50
       laskin=laskin-asia14hin
       asia14hin = (Math.round(asia14hin * 2.5))
-      asia14.innerHTML=""+asia14hin   
+      asia14.innerHTML=""+hienonna(asia14hin)
       borgors.innerHTML=(hienonna(Math.round(laskin)))
       
       
