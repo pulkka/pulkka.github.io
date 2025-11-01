@@ -22,3 +22,6 @@ html {
   background-attachment: fixed;    /* Optional: keeps it still while scrolling */
   height: 100%;
 }
+#Update{
+  margin-left: 30%;
+}
