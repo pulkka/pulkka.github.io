@@ -1,9 +1,9 @@
 body {
-    background: linear-gradient(180deg, #8af8ef 0%, #ff9ab8 100%)no-repeat center center fixed ;
+    background: linear-gradient(180deg, #ffffff 0%, #000000 100%)no-repeat center center fixed ;
     background-size:cover ;
 }
 #text {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .unselectable {
     -webkit-touch-callout: none;
@@ -12,4 +12,23 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+.clickerimg{
+    border: 5px solid #030303;
+  border-radius: 1px;
+  padding: 0px;
+  width: 150px;
+}
+.link {
+    padding-left: 90px;
+    color: #034ce7;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#clickerlink{
+    padding-left: 50px;
+}
+#carlink{
+    padding-left: 75px;
 }
