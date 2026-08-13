@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(255, 202, 202);
+}
+#homeli{
+    width: 160px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+#homeli2{
+    margin: auto;
+
+    padding-left: 10px;
+    padding-top: 10px;
+}
