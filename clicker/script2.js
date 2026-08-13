@@ -81,7 +81,7 @@ var asia11ostettu = parseInt(window.localStorage.getItem('asia11ostettu') || "0"
 var asia12ostettu = parseInt(window.localStorage.getItem('asia12ostettu') || "0");
 var asia13ostettu = parseInt(window.localStorage.getItem('asia13ostettu') || "0");
 var asia14ostettu = parseInt(window.localStorage.getItem('asia14ostettu') || "0");
-var munch = new Audio('cleck.mp3')
+
 var brgr = document.getElementById("brgr");
 var isxmas = 0
 var ishat = 0
@@ -220,7 +220,7 @@ function addborgor(){
   setTimeout(() => {
     brgr.style.transform="scale(1,1)"
   }, 100);
-  
+  var munch = new Audio('cleck.mp3')
   munch.play()
 }
 function buyshop(lol){
