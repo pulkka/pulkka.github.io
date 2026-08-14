@@ -1,11 +1,16 @@
 body {
-    background: linear-gradient(180deg, #ffffff 0%, #000000 100%)no-repeat center center fixed ;
-    background-size:cover ;
+    background-color: #000000;
+    opacity: 1;
+    background-image: radial-gradient(#000000 2px, #242424 2px);
+    background-size: 20px 20px; 
 }
 #text {
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(#242424); 
 }
 .unselectable {
+    color: white;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -20,15 +25,24 @@ body {
   width: 150px;
 }
 .link {
-    padding-left: 90px;
+    margin-left: 90px;
     color: #034ce7;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    background-color: rgb(#242424); 
 }
 #clickerlink{
-    padding-left: 50px;
+    margin-left: 50px;
+    background-color: rgb(#242424); 
 }
 #carlink{
-    padding-left: 75px;
+    margin-left: 75px;
+    background-color: rgb(#242424); 
+}
+#okko {
+    color: white;
+}
+#joko {
+    background-color: #242424;
 }
