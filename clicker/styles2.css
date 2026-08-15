@@ -301,6 +301,8 @@ button:active {
   font-size: 17px;
   display: block;
   border: 2px solid;
+  height: 400px;
+  overflow-y: scroll;
 }
 .leaderboard table{
   background-color: rgb(190 168 94);
