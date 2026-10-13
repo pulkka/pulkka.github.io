@@ -1,0 +1,51 @@
+html {
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    background-image: url("magic-stars-space-sparkle-star.gif");
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    
+}
+html, body{
+        overflow: hidden;
+    }
+#Kakku{
+    width: 400px;
+    height: 300px;
+}
+#cat {
+    padding-top: 100px;
+    width: 240px;
+    height: 96px;
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+}
+#cat2 {
+    margin-left: 85%;
+    margin-bottom: 40%;
+    position: relative;
+    height: 400px;
+}
+#kavijat{
+    position: absolute;
+    margin-left: 90%;
+    margin-bottom: 90%;
+}
+@media only screen and (max-width: 500px) {
+    #cat2 {
+        height: 200px;
+        margin-left: 60%;
+    }
+    html, body{
+        overflow-y: scroll;
+    }
+    #kavijat {
+        margin-left: 60%;
+        margin-top: 10%;
+    }
+}
