@@ -19,10 +19,8 @@ html, body{
     height: 300px;
 }
 #cat {
-    padding-top: 100px;
     width: 240px;
-    height: 96px;
-    background-color: rgba(255, 0, 0, 0);
+    height: 250px;
     position: absolute;
 }
 #cat2 {
@@ -35,6 +33,32 @@ html, body{
     position: absolute;
     margin-left: 90%;
     margin-bottom: 90%;
+    border: 5px solid #030303;
+        border-radius: 1px;
+        padding: 0px;
+        width: 150px;
+}
+@media only screen and (max-width: 1000px) {
+    #cat2 {
+        height: 300px;
+        margin-left: 80%;
+    }
+    html, body{
+        overflow-y: scroll;
+    }
+    #kavijat {
+        margin-left: 80%;
+        margin-top: 5%;
+    }
+    #resepti   {
+        border: 5px solid #030303;
+        border-radius: 1px;
+        padding: 0px;
+        width: 200px;
+    }
+    #text{
+        width: 200px;
+    }
 }
 @media only screen and (max-width: 500px) {
     #cat2 {
@@ -42,10 +66,38 @@ html, body{
         margin-left: 60%;
     }
     html, body{
-        overflow-y: scroll;
+        overflow-y: hidden;
     }
     #kavijat {
-        margin-left: 60%;
+        margin-left: 50%;
         margin-top: 10%;
+    }
+}
+
+#text {
+    
+    margin-right: 70%;
+    border: 5px solid white;
+    border-radius: 1px;
+    padding: 10px;
+    background-color: rgb(98, 121, 255);
+}
+#resepti {
+    border: 5px solid #ffff;
+    border-radius: 1px;
+    padding: 0px;
+    width: 200px;
+    padding: 20px;
+    overflow-y: scroll;
+    height: 100px;
+    background-color: rgb(98, 121, 255) ;
+}
+img{
+    border: 5px solid white;
+    border-radius: 1px;
+    padding: 0px;
+    #kavijat{
+        padding: 0;
+        
     }
 }
