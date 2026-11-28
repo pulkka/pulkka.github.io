@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>BurgerClicker2</title>
+    <link rel="icon"
+    href="burger2.png">
+</head>
+<body>
+    <div id="burgerspace">
+        <p id="burgers">505</p>
+        <img onclick="addburger()" id="burger" src="Burger2.png" alt="">
+    </div>
+    <div id="shops">
+        <div id="ontopofshop">
+        <p id="bps" title="BurgeritPerSekunti" class="power">BPS:</p>
+        <p class="bpstooltip">(Burgereita sekunnissa)</p>
+        <p id="bpc" title="BurgeritPerSekunti" class="power">BPC:</p>
+        <p class="bpstooltip">(Burgereita klikistä)</p>
+    </div>
+    <div id="shop">
+        
+        <div id="item1div" onclick="buyshop(1)" class="shopitem">
+            <img class="shopfoto" src="stall.png">
+            <span>Burger Kioski</span>
+            <p class="shopPrice" id="item1">20🍔</p>
+            <span class="itemamt" id="item1amt">0</span>
+            <div class="info">
+                <p style="margin-left: 5px;" id="iitem1">  BPS: 1</p>
+            </div>
+        </div>
+        
+        <div id="item2div" onclick="buyshop(2)" class="shopitem">
+            <img class="shopfoto" src="kitchen.png">
+            <span>Pieni Keittiö</span>
+            <p class="shopPrice" id="item2">100🍔</p>
+            <span class="itemamt" id="item2amt">0</span>
+            <div class="info">
+                <p style="margin-left: 5px;" id="iitem2">  BPS: 1</p>
+            </div>
+        </div>
+        
+        <div id="item3div" onclick="buyshop(3)" class="shopitem">
+            <img id="pngegg" class="shopfoto" src="pngegg.png">
+            <span>Pikaruoka Ravintola</span>
+            <p class="shopPrice" id="item3">2000🍔</p>
+            <span class="itemamt" id="item3amt">0</span>
+            <div class="info">
+                <p style="margin-left: 5px;" id="iitem3">  BPS: 1</p>
+            </div>
+        </div>
+        <div id="item4div" onclick="buyshop(4)" class="shopitem">
+            <img class="shopfoto" src="restaurang.png">
+            <span>Ravintola</span>
+            <p class="shopPrice" id="item4">10000🍔</p>
+            <span class="itemamt" id="item4amt">0</span>
+            <div class="info">
+                <p style="margin-left: 5px;" id="iitem4">  BPS: 1</p>
+            </div>
+        </div>
+        <div id="item5div" onclick="buyshop(5)" class="shopitem">
+            <img class="shopfoto" src="drive-thru.png">
+            <span>Autokaista</span>
+            <p class="shopPrice" id="item5">10000🍔</p>
+            <span class="itemamt" id="item5amt">0</span>
+            <div class="info">
+                <p style="margin-left: 5px;" id="iitem5">  BPS: 1</p>
+            </div>
+        </div>
+        <div id="item6div" onclick="buyshop(6)" class="shopitem">
+            <img class="shopfoto" src="hesburger-seeklogo.png">
+            <span>Pikaruoka Ketju</span>
+            <p class="shopPrice" id="item6">10000🍔</p>
+            <span class="itemamt" id="item6amt">0</span>
+            <div class="info">
+                <p style="margin-left: 5px;" id="iitem6">  BPS: 1</p>
+            </div>
+        </div>
+        <div id="item7div" onclick="buyshop(7)" class="shopitem">
+            <img class="shopfoto" src="chain.png">
+            <span>Ravintola Ketju</span>
+            <p class="shopPrice" id="item7">10000🍔</p>
+            <span class="itemamt" id="item7amt">0</span>
+            <div class="info">
+                <p style="margin-left: 5px;" id="iitem7">  BPS: 1</p>
+            </div>
+        </div>
+        <div id="item8div" onclick="buyshop(8)" class="shopitem">
+            <img class="shopfoto" src="factory.png">
+            <span>Tehdas</span>
+            <p class="shopPrice" id="item8">10000🍔</p>
+            <span class="itemamt" id="item8amt">0</span>
+            <div class="info">
+                <p style="margin-left: 5px;" id="iitem8">  BPS: 1</p>
+            </div>
+        </div>
+        <div id="item9div" onclick="buyshop(9)" class="shopitem">
+            <img class="shopfoto" src="yhtiö.png">
+            <span>Yritys</span>
+            <p class="shopPrice" id="item9">10000🍔</p>
+            <span class="itemamt" id="item9amt">0</span>
+            <div class="info">
+                <p style="margin-left: 5px;" id="iitem9">  BPS: 1</p>
+            </div>
+        </div>
+        <div id="item10div" onclick="buyshop(10)" class="shopitem">
+            <img class="shopfoto" src="mcdonaldo.png">
+            <span>Kansainvälinen Ketju</span>
+            <p class="shopPrice" id="item10">10000🍔</p>
+            <span class="itemamt" id="item10amt">0</span>
+            <div class="info">
+                <p style="margin-left: 5px;" id="iitem10">  BPS: 1</p>
+            </div>
+        </div>
+        <div id="item11div" onclick="buyshop(11)" class="shopitem">
+            <img class="shopfoto" src="imperium.png">
+            <span>Burger Imperiumi</span>
+            <p class="shopPrice" id="item11">10000🍔</p>
+            <span class="itemamt" id="item11amt">0</span>
+            <div class="info">
+                <p style="margin-left: 5px;" id="iitem11">  BPS: 1</p>
+            </div>
+        </div>
+        <div id="item12div" onclick="buyshop(12)" class="shopitem">
+            <img class="shopfoto" src="www.png">
+            <span>Maailmanlaajuinen Monopoli</span>
+            <p class="shopPrice" id="item12">10000🍔</p>
+            <span class="itemamt" id="item12amt">0</span>
+            <div class="info">
+                <p style="margin-left: 5px;" id="iitem12">  BPS: 1</p>
+            </div>
+        </div>
+        
+    </div>
+    <div id="clickUpgrades">
+            <div onclick="buyclick(1)" id="click1" class="clickitem">
+                <img src="cursor.png" alt="">
+                <div class="clicktext"><p>+1 klikki</p></div>
+                <p class="itemamtclick">0</p>
+                <div class="clickPrice"><p >1000</p></div>
+                
+            </div>
+            <div onclick="buyclick(2)" id="click2" class="clickitem">
+                <img src="cursor.png" alt="">
+                <div class="clicktext"><p>+20 klikki</p></div>
+                <p class="itemamtclick">0</p>
+                <div class="clickPrice"><p >50000</p></div>
+                
+            </div>
+            <div onclick="buyclick(3)" id="click3" class="clickitem">
+                <img src="cursor.png" alt="">
+                <div class="clicktext" style="font-size:13px !important; margin-top: 35px !important; top: 0;"><p>+100 klikki</p></div>
+                <p class="itemamtclick">0</p>
+                <div class="clickPrice"><p >250000</p></div>
+                
+            </div>
+            <div onclick="buyclick(4)" id="click4" class="clickitem">
+                <img src="cursor.png" alt="">
+                <div class="clicktext" style="font-size:13px !important; margin-top: 35px !important; top: 0;"><p>+500   klikki</p></div>
+                <p class="itemamtclick">0</p>
+                <div class="clickPrice" style="font-size: 13px;"><p >1250000</p></div>
+                
+            </div>
+        </div>  
+    </div>
+    
+    <script src="script.js" defer></script>
+    
+</body>
+</html>
